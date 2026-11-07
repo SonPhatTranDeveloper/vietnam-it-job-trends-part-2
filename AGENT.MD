@@ -43,9 +43,24 @@ exception only.
 | 2 | `02-dedupe.py` | staging -> `data/step-02-dedup/`, drops Techmap's `isDuplicate` flag |
 | 3 | `03-fingerprint.py` | dedup -> `data/step-03-fp/`, marks (company, title, city, month) repeats as `fp_dup` |
 | 4 | `04-filter-it-with-jev.py` | fingerprint -> `data/step-04-it/`, `data/step-04-ambiguous/`, report |
+| 5 | `05-extract-features.py` | `data/step-04-it/` -> `data/step-05-features/` (rules in `taxonomy.py`) |
+| 6 | `06-classify-roles-with-jev.py` | features -> `data/step-06-role-cache.jsonl` (Jev role per distinct title) |
 
 Every step skips or overwrites its own outputs, so re-running is safe. Nothing under `data/`
 is committed.
+
+## Analysis notebooks
+
+Notebooks live in `notebooks/`, one per theme (`01-market-volume`, `02-technology-trends`,
+`03-roles`, `04-seniority`, `05-companies`, `06-ai-and-llm`, `07-work-mode`, `08-salary`).
+Every definition (what counts as a technology, role, level or salary) lives in `taxonomy.py`; a
+control-source check goes beside every trend, and a source whose descriptions change length is
+not a control for description-based counts (CareerBuilder in 2025). Keep cells to short calls into a module (`analysis.py`
+for shared data access and chart style, one module per notebook for its queries and charts) so the
+function rules above still apply. Count unique IT postings (`fp_dup = false`), pair every count
+with the IT share of the same source, and stop at `LAST_FULL_MONTH`. Charts use the part 1
+palette. Save only aggregates to `tables/` and charts to `charts/`; never put raw postings in a
+notebook output. Re-run with `uv run jupyter nbconvert --to notebook --execute --inplace <file>`.
 
 ## Data and safety
 
@@ -54,7 +69,7 @@ is committed.
   before anything is published.
 - **Secrets.** The Jev key lives in `.env.local` (git-ignored). Never print it, log it,
   paste it into a file that is tracked, or put it in a commit message.
-- **Money.** Step 4 calls a paid API (about $0.000022 per distinct title; ~$13.5 for all years). It sends nothing
+- **Money.** Steps 4 and 6 call a paid API (about $0.000022 per distinct title; step 4 ~$13.5 for all years, step 6 ~$1.1). It sends nothing
   unless run with `--yes`; always run `--dry-run` first and state the estimated cost before
   spending. The answers are cached in `data/step-04-jev-cache.jsonl`, so a stop loses
   nothing and a re-run never pays twice for a title.
