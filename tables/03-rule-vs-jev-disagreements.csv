@@ -1,0 +1,31 @@
+title,rule,jev,postings
+Quality Engineer,technical_non_software,qa_test,253
+System Engineer,software_other,it_support_infra,197
+Solution Architect,software_other,devops_cloud,121
+Technical Support Engineer,technical_non_software,it_support_infra,116
+Solutions Architect,software_other,devops_cloud,115
+Chuyên Viên Kỹ Thuật,technical_non_software,software_other,83
+Nhân Viên IT Phần Mềm,it_support_infra,software_other,74
+IT Specialist,software_other,it_support_infra,72
+Product Engineer,other,software_other,72
+Kiến Trúc Sư Triển Khai,other,devops_cloud,63
+Kỹ Sư Hóa,other,technical_non_software,63
+Kỹ Sư Công Nghệ,other,software_other,63
+Technical Engineer,other,software_other,58
+Dotnet Developer,software_other,backend,54
+Senior Quality Engineer,technical_non_software,qa_test,54
+Technical Support,technical_non_software,it_support_infra,53
+Administrator,other,it_support_infra,49
+QUALITY ENGINEER,technical_non_software,qa_test,45
+Engineer,other,software_other,45
+Chuyên viên phát triển CoreBank - Dự án nâng cấp CoreBanking,other,backend,44
+R&D Engineer,other,software_other,44
+Kiểm Nghiệm Viên,other,qa_test,44
+Hardware Engineer,embedded_iot,technical_non_software,43
+Thực Tập Sinh IT,it_support_infra,software_other,43
+Nhân Viên Đảm Bảo Chất Lượng,other,qa_test,41
+ReactJS Developer,software_other,frontend,36
+Giám Sát Vận Hành,technical_non_software,devops_cloud,36
+Software Engineer (AI Training),ai_ml,software_other,35
+Penetration Tester,qa_test,security,34
+C++ Developer,backend,software_other,34

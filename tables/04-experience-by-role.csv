@@ -1,0 +1,16 @@
+role,postings,median_years,pct_5_years_plus
+embedded_iot,749,2.0,31.5
+it_support_infra,2463,2.0,12.6
+other,1115,2.0,28.8
+qa_test,4250,2.0,22.7
+technical_non_software,2849,2.0,14.9
+ai_ml,2802,3.0,35.7
+backend,2964,3.0,37.2
+data,3278,3.0,24.8
+devops_cloud,2535,3.0,37.8
+erp_consulting,542,3.0,31.5
+frontend,789,3.0,31.9
+mobile,564,3.0,36.7
+security,1003,3.0,29.0
+software_other,3377,3.0,37.9
+fullstack,1634,4.0,41.7

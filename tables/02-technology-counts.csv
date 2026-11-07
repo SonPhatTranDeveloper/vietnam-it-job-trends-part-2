@@ -1,0 +1,123 @@
+tech,postings,category,share
+Python,25912,language,29.3
+SQL,20411,language,23.1
+AWS,19536,cloud,22.1
+Java,18753,language,21.2
+CI/CD,18243,devops,20.7
+Git,16734,devops,18.9
+JavaScript,14351,language,16.2
+Azure,13982,cloud,15.8
+Docker,13168,devops,14.9
+Linux,12555,devops,14.2
+React,11860,framework,13.4
+REST API,11349,framework,12.9
+Kubernetes,11333,devops,12.8
+Machine Learning,11169,ai,12.6
+GCP,10203,cloud,11.6
+HTML/CSS,10145,language,11.5
+MySQL,10127,database,11.5
+Microservices,10059,framework,11.4
+PostgreSQL,9171,database,10.4
+.NET,8346,framework,9.4
+C#,8152,language,9.2
+Node.js,8064,framework,9.1
+SQL Server,7796,database,8.8
+Oracle,7351,database,8.3
+C++,7154,language,8.1
+TypeScript,6673,language,7.6
+MongoDB,6323,database,7.2
+NoSQL,5839,database,6.6
+Kafka,5767,database,6.5
+LLM,5520,llm,6.3
+Angular,5513,framework,6.2
+Android,5468,mobile,6.2
+PHP,5465,language,6.2
+Automation Testing,4962,testing,5.6
+Redis,4832,database,5.5
+Jenkins,4822,devops,5.5
+iOS,4696,mobile,5.3
+Terraform,4579,devops,5.2
+Cisco/CCNA,4574,infrastructure,5.2
+Power BI,4529,data,5.1
+Vue,4467,framework,5.1
+ETL,4304,data,4.9
+Spring,4103,framework,4.6
+SAP,3991,enterprise,4.5
+GPT/OpenAI,3876,llm,4.4
+AI Agents,3544,llm,4.0
+Data Warehouse,3494,data,4.0
+Prometheus/Grafana,3362,devops,3.8
+Selenium,3054,testing,3.5
+PyTorch,3022,ai,3.4
+Generative AI,2957,llm,3.3
+Go,2956,language,3.3
+TensorFlow,2909,ai,3.3
+VMware,2796,infrastructure,3.2
+Deep Learning,2761,ai,3.1
+RAG,2658,llm,3.0
+Ansible,2601,devops,2.9
+Tableau,2467,data,2.8
+Postman,2449,testing,2.8
+Elasticsearch,2383,database,2.7
+NLP,2373,ai,2.7
+GraphQL,2334,framework,2.6
+Jest/JUnit,2292,testing,2.6
+MLOps,2246,ai,2.5
+jQuery,2245,framework,2.5
+Computer Vision,2234,ai,2.5
+RabbitMQ,2137,database,2.4
+Airflow,2113,data,2.4
+Windows Server,2098,infrastructure,2.4
+React Native,2085,mobile,2.4
+Next.js,2060,framework,2.3
+Kotlin,2042,language,2.3
+Flutter,2013,mobile,2.3
+Embedded/RTOS,1957,embedded,2.2
+Playwright,1801,testing,2.0
+SIEM,1773,security,2.0
+Pentest,1747,security,2.0
+Hadoop,1708,data,1.9
+ISO 27001,1608,security,1.8
+Prompt Engineering,1599,llm,1.8
+Laravel,1546,framework,1.8
+FastAPI,1535,framework,1.7
+Scala,1533,language,1.7
+LangChain,1527,llm,1.7
+Cypress,1487,testing,1.7
+Active Directory,1464,infrastructure,1.7
+Django,1395,framework,1.6
+Unity,1374,game,1.6
+Pandas/NumPy,1335,data,1.5
+NestJS,1294,framework,1.5
+scikit-learn,1274,ai,1.4
+Ruby,1196,language,1.4
+Appium,1176,testing,1.3
+BigQuery,1170,data,1.3
+Spark,1166,data,1.3
+Flask,1152,framework,1.3
+Fortinet/Palo Alto,1127,infrastructure,1.3
+Ruby on Rails,1088,framework,1.2
+Helm,1042,devops,1.2
+Nginx,1036,devops,1.2
+JMeter,981,testing,1.1
+Vector DB,949,llm,1.1
+Perl,948,language,1.1
+Snowflake,887,data,1.0
+ServiceNow,855,enterprise,1.0
+dbt,841,data,1.0
+DynamoDB,819,database,0.9
+Salesforce,816,enterprise,0.9
+Hugging Face,760,llm,0.9
+FPGA,740,embedded,0.8
+Rust,733,language,0.8
+Cassandra,719,database,0.8
+Objective-C,690,language,0.8
+Odoo,637,enterprise,0.7
+Dynamics 365,447,enterprise,0.5
+Dart,407,language,0.5
+Unreal,313,game,0.4
+Swift,232,language,0.3
+Xamarin,170,mobile,0.2
+Solidity,157,language,0.2
+Lua,154,language,0.2
+Alibaba Cloud,96,cloud,0.1

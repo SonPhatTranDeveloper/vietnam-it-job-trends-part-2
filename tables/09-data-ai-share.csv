@@ -1,0 +1,46 @@
+period,n,hits,share,scope
+2020,6643,549,8.26,All sources
+2021,12214,968,7.93,All sources
+2022,9547,945,9.9,All sources
+2023-Q1,8899,576,6.47,All sources
+2023-Q2,3798,390,10.27,All sources
+2023-Q3,3524,423,12.0,All sources
+2023-Q4,9282,755,8.13,All sources
+2024-Q1,8083,805,9.96,All sources
+2024-Q2,9830,766,7.79,All sources
+2024-Q3,9144,821,8.98,All sources
+2024-Q4,4084,448,10.97,All sources
+2025-Q1,6129,658,10.74,All sources
+2025-Q2,6213,580,9.34,All sources
+2025-Q3,13687,1960,14.32,All sources
+2025-Q4,8449,1690,20.0,All sources
+2026-Q1,7113,1568,22.04,All sources
+2026-Q2,9679,2069,21.38,All sources
+2026-Q3,13550,2771,20.45,All sources
+2020,1801,158,8.77,CareerBuilder
+2021,11601,894,7.71,CareerBuilder
+2022,8823,865,9.8,CareerBuilder
+2023-Q1,1862,213,11.44,CareerBuilder
+2023-Q2,1771,216,12.2,CareerBuilder
+2023-Q3,1612,205,12.72,CareerBuilder
+2023-Q4,1637,212,12.95,CareerBuilder
+2024-Q1,1555,230,14.79,CareerBuilder
+2024-Q2,1168,159,13.61,CareerBuilder
+2024-Q3,1030,146,14.17,CareerBuilder
+2024-Q4,583,76,13.04,CareerBuilder
+2025-Q1,1280,168,13.12,CareerBuilder
+2025-Q2,1180,133,11.27,CareerBuilder
+2025-Q3,1138,152,13.36,CareerBuilder
+2025-Q4,954,120,12.58,CareerBuilder
+2026-Q3,632,102,16.14,CareerBuilder
+2023-Q1,557,61,10.95,LinkedIn
+2023-Q2,1032,104,10.08,LinkedIn
+2023-Q3,864,100,11.57,LinkedIn
+2023-Q4,682,78,11.44,LinkedIn
+2024-Q2,636,82,12.89,LinkedIn
+2024-Q3,573,64,11.17,LinkedIn
+2025-Q3,4700,1058,22.51,LinkedIn
+2025-Q4,5106,1228,24.05,LinkedIn
+2026-Q1,4161,1108,26.63,LinkedIn
+2026-Q2,5307,1468,27.66,LinkedIn
+2026-Q3,9627,2141,22.24,LinkedIn

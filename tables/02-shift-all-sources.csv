@@ -1,0 +1,21 @@
+tech,early,late,change
+Python,9.5,38.3,28.8
+CI/CD,4.9,28.5,23.6
+AWS,7.4,27.7,20.3
+Docker,3.2,20.0,16.8
+Git,6.5,22.8,16.3
+Azure,4.4,20.4,16.0
+SQL,10.6,26.2,15.6
+Kubernetes,2.5,17.1,14.6
+GCP,2.8,15.2,12.4
+Machine Learning,4.7,15.6,10.9
+Microservices,3.7,14.5,10.8
+PostgreSQL,2.6,13.4,10.8
+REST API,6.3,15.5,9.2
+Linux,9.9,14.7,4.8
+JavaScript,10.8,15.3,4.5
+React,9.6,14.0,4.4
+Java,16.9,20.7,3.8
+MySQL,8.6,11.5,2.9
+HTML/CSS,10.5,9.3,-1.2
+.NET,11.4,7.5,-3.9

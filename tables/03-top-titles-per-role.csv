@@ -1,0 +1,96 @@
+role,title,postings
+backend,java developer,371
+backend,backend developer,221
+backend,back end developer,203
+backend,php developer,191
+backend,python developer,185
+frontend,frontend developer,285
+frontend,senior frontend developer,95
+frontend,front-end developer,89
+frontend,web developer,88
+frontend,senior frontend engineer,60
+fullstack,full stack engineer,224
+fullstack,fullstack developer,172
+fullstack,full stack developer,131
+fullstack,senior fullstack developer,64
+fullstack,full-stack developer,63
+mobile,android developer,121
+mobile,ios developer,102
+mobile,mobile developer,92
+mobile,flutter developer,61
+mobile,senior android developer,60
+software_other,software engineer,379
+software_other,senior software engineer,210
+software_other,lập trình viên,179
+software_other,chuyên viên kỹ thuật,159
+software_other,technical lead,127
+devops_cloud,devops engineer,767
+devops_cloud,senior devops engineer,268
+devops_cloud,solution architect,128
+devops_cloud,solutions architect,116
+devops_cloud,kiến trúc sư triển khai,92
+data,data engineer,825
+data,data analyst,625
+data,senior data engineer,344
+data,senior data analyst,227
+data,chuyên viên phân tích dữ liệu,144
+ai_ml,ai engineer,461
+ai_ml,data scientist,261
+ai_ml,senior ai engineer,234
+ai_ml,senior data scientist,155
+ai_ml,artificial intelligence engineer,102
+qa_test,nhân viên qa,817
+qa_test,quality engineer,298
+qa_test,qa engineer,207
+qa_test,qc engineer,185
+qa_test,kỹ sư qa/qc,162
+security,security engineer,74
+security,chuyên viên an ninh thông tin,37
+security,chuyên viên đánh giá an toàn bảo mật hệ thống cntt,36
+security,penetration tester,34
+security,security architect,32
+it_support_infra,nhân viên it,1888
+it_support_infra,nhân viên it helpdesk,421
+it_support_infra,it helpdesk,389
+it_support_infra,chuyên viên it,348
+it_support_infra,it support,275
+embedded_iot,embedded software engineer,95
+embedded_iot,firmware engineer,31
+embedded_iot,embedded engineer,30
+embedded_iot,design verification engineer,27
+embedded_iot,kỹ sư lập trình nhúng,26
+game,unity developer,82
+game,game developer,38
+game,junior game developer (c++),18
+game,c++ game developer intern (6-month full-time contract),17
+game,c++ game developer intern,15
+erp_consulting,odoo developer,35
+erp_consulting,salesforce developer,34
+erp_consulting,solution consultant,31
+erp_consulting,servicenow developer,27
+erp_consulting,technical consultant,19
+ba_pm_product,presales engineer,29
+ba_pm_product,pre-sales engineer,20
+ba_pm_product,it system analyst,11
+ba_pm_product,nhân viên tư vấn giải pháp kỹ thuật - presales,8
+ba_pm_product,solution and presales consultant,6
+design,asic layout designer,5
+design,solution designer,4
+design,ui/ux engineer,4
+design,solution engineer (cad designer),2
+design,[emn] asic layout designer,2
+technical_non_software,nhân viên kỹ thuật,2695
+technical_non_software,kỹ sư điện,1198
+technical_non_software,kỹ sư tự động hóa,407
+technical_non_software,electrical engineer,219
+technical_non_software,kỹ thuật viên,199
+not_it,kiến trúc sư triển khai thiết kế,6
+not_it,senior associate - credit risk modelling (risk services),3
+not_it,pre sales engineer,3
+not_it,"customer solutions engineer, gtech ads large customer sales (english)",3
+not_it,chuyên viên cao cấp mô hình rủi ro tín dụng,3
+other,chief engineer,74
+other,nhân viên quản trị website,69
+other,kỹ sư nội nghiệp,44
+other,physical design engineer,41
+other,chuyên viên phát triển tích hợp - dự án nâng cấp corebanking,35
