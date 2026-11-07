@@ -7,3 +7,31 @@ dependencies = [
     "pyarrow>=26.0.1",
     "tqdm>=4.70.1",
 ]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.17.4",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+# E/W/F: pycodestyle + pyflakes   I: import order   UP: modern syntax   B: bugbear
+# SIM: simplifications   C90: cyclomatic complexity   PLR: "too big" pylint rules
+# D: docstrings (every function)   ANN: type annotations incl. return types
+# PTH: pathlib   RUF: ruff-specific
+select = ["E", "W", "F", "I", "UP", "B", "SIM", "C90", "PLR", "D", "ANN", "PTH", "RUF"]
+ignore = ["D203", "D213"]  # the two docstring rules that contradict the google convention
+
+[tool.ruff.lint.mccabe]
+max-complexity = 8  # keep every function small enough to read in one go
+
+[tool.ruff.lint.pylint]
+max-args = 5
+max-branches = 8
+max-statements = 25
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
