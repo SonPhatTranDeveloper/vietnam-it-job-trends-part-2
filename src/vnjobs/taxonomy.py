@@ -560,7 +560,9 @@ _COMPANY_NOISE = re.compile(
     r"\b(công ty|cty|tnhh|cổ phần|cp|co\.?|ltd\.?|jsc|inc\.?|corp(oration)?|llc|pte|"
     r"vietnam|việt nam|vn|chi nhánh|branch)\b"
 )
-# Prefixes of the normalised name that mark a corporate group; the first match wins.
+# Names that mark a corporate group, matched as whole words anywhere in the normalised name
+# (not only as a prefix), so "viễn thông fpt" and "dược phẩm fpt long châu" join FPT. The
+# first group that matches wins.
 COMPANY_GROUPS = (
     ("FPT", ("fpt",)),
     ("Bosch", ("bosch",)),
@@ -572,6 +574,10 @@ COMPANY_GROUPS = (
     ("TMA", ("tma",)),
     ("CMC", ("cmc",)),
     ("MB Bank", ("ngân hàng tmcp quân đội", "mbbank", "mb bank")),
+)
+_GROUP_PATTERNS = tuple(
+    (group, re.compile(r"\b(?:" + "|".join(map(re.escape, names)) + r")\b"))
+    for group, names in COMPANY_GROUPS
 )
 
 
@@ -604,8 +610,8 @@ def company_group(key: str | None) -> str | None:
     """
     if not key:
         return None
-    for group, prefixes in COMPANY_GROUPS:
-        if key.startswith(prefixes):
+    for group, pattern in _GROUP_PATTERNS:
+        if pattern.search(key):
             return group
     return None
 
