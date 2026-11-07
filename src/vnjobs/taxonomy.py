@@ -8,6 +8,7 @@ as data, so a notebook never hides a definition in a chart cell. Change a rule h
 from __future__ import annotations
 
 import re
+import unicodedata
 
 # --- technologies ----------------------------------------------------------------------
 # name -> (category, literal aliases). Aliases are matched on lower-cased title + description
@@ -444,28 +445,114 @@ def work_mode(raw: str | None) -> str | None:
     return None
 
 
+# Matched on accent-folded, lower-cased text, so "Đà Nang", "Da Nang" and "Đà Nẵng" agree.
+# Districts are listed because many postings give only a district ("Quận 7", "Cầu Giấy");
+# before they were added, about a fifth of HCM and Hà Nội postings fell into "Other".
 CITY_GROUPS = (
-    ("Hồ Chí Minh", ("ho chi minh", "hồ chí minh", "hcm", "saigon", "sài gòn", "thu duc")),
-    ("Hà Nội", ("hanoi", "hà nội", "ha noi")),
-    ("Đà Nẵng", ("da nang", "đà nẵng")),
+    (
+        "Hồ Chí Minh",
+        (
+            "ho chi minh",
+            "hcm",
+            "saigon",
+            "sai gon",
+            "thu duc",
+            "tan binh",
+            "binh thanh",
+            "phu nhuan",
+            "go vap",
+            "tan phu",
+            "binh tan",
+            "cu chi",
+            "hoc mon",
+            "nha be",
+            "can gio",
+            "binh chanh",
+        ),
+    ),
+    (
+        "Hà Nội",
+        (
+            "ha noi",
+            "hanoi",
+            "cau giay",
+            "dong da",
+            "ba dinh",
+            "hoan kiem",
+            "hai ba trung",
+            "thanh xuan",
+            "hoang mai",
+            "long bien",
+            "tay ho",
+            "tu liem",
+            "ha dong",
+            "ba vi",
+            "soc son",
+            "dong anh",
+            "gia lam",
+            "thanh tri",
+            "me linh",
+            "hoai duc",
+            "thach that",
+            "quoc oai",
+            "chuong my",
+            "thuong tin",
+            "dan phuong",
+            "son tay",
+        ),
+    ),
+    (
+        "Đà Nẵng",
+        (
+            "da nang",
+            "danang",
+            "hai chau",
+            "son tra",
+            "ngu hanh son",
+            "lien chieu",
+            "thanh khe",
+            "cam le",
+            "hoa vang",
+        ),
+    ),
 )
+# Numbered districts ("Quận 1" ... "Quận 12") exist only in Hồ Chí Minh.
+_HCM_NUMBERED_DISTRICT = re.compile(r"\b(quan|q|district)\.? ?\d{1,2}\b")
+# A location that names only the country says nothing about the city.
+_COUNTRY_ONLY = {"vietnam", "viet nam", "vn"}
+
+
+def fold_text(text: str) -> str:
+    """Lower-case a string and strip Vietnamese accents, so spellings compare equal.
+
+    Args:
+        text: Any text.
+
+    Returns:
+        The folded text, with "đ" turned into "d".
+    """
+    decomposed = unicodedata.normalize("NFD", text.lower().replace("đ", "d"))
+    return "".join(ch for ch in decomposed if not unicodedata.combining(ch))
 
 
 def city_group(raw: str | None) -> str:
-    """Collapse the feed's many spellings of a city into the three big ones.
+    """Collapse the feed's many spellings of a city or district into the three big cities.
 
     Args:
         raw: The raw city string.
 
     Returns:
-        ``Hồ Chí Minh``, ``Hà Nội``, ``Đà Nẵng``, ``Other`` or ``Unknown`` when empty.
+        ``Hồ Chí Minh``, ``Hà Nội``, ``Đà Nẵng``, ``Other``, or ``Unknown`` when the
+        location is empty or names only the country.
     """
-    if not raw:
+    folded = fold_text(raw or "").strip(" ,.")
+    if not folded or folded in _COUNTRY_ONLY:
         return "Unknown"
-    lowered = raw.lower()
     for name, aliases in CITY_GROUPS:
-        if any(alias in lowered for alias in aliases):
+        if any(alias in folded for alias in aliases):
             return name
+    if _HCM_NUMBERED_DISTRICT.search(folded):
+        return "Hồ Chí Minh"
     return "Other"
 
 
