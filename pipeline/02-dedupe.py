@@ -9,7 +9,7 @@ dropped. IMPORTANT LIMIT: the flag only exists from May 2025 (``has_dup_flag`` i
 for earlier rows), so for the first 16 months this step removes nothing. The report
 shows the flag coverage per month so no chart can quietly treat 2024 as "clean".
 
-    uv run python 02-dedupe.py
+    uv run python pipeline/02-dedupe.py
 """
 
 from __future__ import annotations
@@ -19,7 +19,7 @@ from typing import NamedTuple
 
 import duckdb
 
-from common import DATA_DIR, DEDUP_DIR, STAGING_DIR, connect, month_of
+from vnjobs.common import DATA_DIR, DEDUP_DIR, STAGING_DIR, connect, month_of
 
 REPORT_PATH = DATA_DIR / "step-02-dedup-report.csv"
 

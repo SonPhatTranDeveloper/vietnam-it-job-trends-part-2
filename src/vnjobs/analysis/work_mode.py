@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-import analysis as a
+from vnjobs.analysis import core as a
 
 FROM_MONTH = "2025-01"
 MODES = ["remote", "hybrid", "onsite"]

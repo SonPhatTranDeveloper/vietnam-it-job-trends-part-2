@@ -9,11 +9,13 @@ otherwise (see ``analysis.add_jev_roles``).
 
 from __future__ import annotations
 
+import re
+
 import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.figure import Figure
 
-import analysis as a
+from vnjobs.analysis import core as a
 
 ROLE_ORDER = [
     "backend",
@@ -73,6 +75,7 @@ QUALITY_CONTROL_WORDS = (
     r"chất lượng|quality control|\bqc\b|iqc|oqc|ipqc|lab|sản xuất|production|kiểm nghiệm"
 )
 MIN_AGREEMENT_POSTINGS = 50
+MIN_JOB_LENGTH = 4
 
 
 def scope_mask(frame: pd.DataFrame, source: str | None) -> pd.Series | None:
@@ -265,3 +268,53 @@ def qa_split(frame: pd.DataFrame) -> pd.DataFrame:
     )
     table["pct_other_qa"] = 100 - table.pct_software_testing
     return table.round(1).reset_index()
+
+
+NEW_TITLES_FROM = "2024-01"
+NEW_TITLE_MIN_POSTINGS = 20
+NEW_TITLES_SHOWN = 40
+# Words that change a title without changing the job: promo prefixes, requisition codes, bank
+# department tags and seniority.
+_TITLE_NOISE = re.compile(
+    r"(^mới\b|\[[^\]]*\]|\([^)]*\)|\s-\s.*$|\b(senior|sr|middle|mid|junior|jr|fresher|intern|"
+    r"expert|lead|principal|trainee|staff|associate|entry)\b|\b[a-z]{1,3}\d+[\d.]*\b|[/,&:+-])"
+)
+
+
+def title_family(title_key: str) -> str:
+    """Reduce a cleaned title to the job it names, without level, codes or promo words.
+
+    Args:
+        title_key: The lower-cased cleaned title.
+
+    Returns:
+        The title with noise removed and spaces collapsed.
+    """
+    return re.sub(r"\s+", " ", _TITLE_NOISE.sub(" ", title_key)).strip()
+
+
+def emerging_titles(frame: pd.DataFrame) -> pd.DataFrame:
+    """List job names first seen from 2024 on that already have a meaningful number of postings.
+
+    A title is reduced to its family (see :func:`title_family`), so "Middle AI Engineer" and
+    "Senior AI Engineer (HO25.366)" are one job. A family is "emerging" when it never appears
+    before 2024 and reaches at least ``NEW_TITLE_MIN_POSTINGS`` postings. Company-specific names
+    are not filtered out, so read the list as candidates.
+
+    Args:
+        frame: Output of :func:`analysis.load_features`.
+
+    Returns:
+        Columns ``job``, ``first_month``, ``postings``, ``role``, ordered by postings.
+    """
+    clean = frame.assign(job=frame.title_key.map(title_family))
+    clean = clean[clean.job.str.len() >= MIN_JOB_LENGTH]
+    grouped = clean.groupby("job").agg(
+        first_month=("month", "min"),
+        postings=("month", "size"),
+        role=("role", lambda s: s.mode().iat[0]),
+    )
+    fresh = grouped[
+        (grouped.first_month >= NEW_TITLES_FROM) & (grouped.postings >= NEW_TITLE_MIN_POSTINGS)
+    ]
+    return fresh.sort_values("postings", ascending=False).head(NEW_TITLES_SHOWN).reset_index()

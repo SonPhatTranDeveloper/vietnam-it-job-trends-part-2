@@ -12,8 +12,8 @@ import re
 
 import pandas as pd
 
-import analysis as a
-import taxonomy as tx
+from vnjobs import taxonomy as tx
+from vnjobs.analysis import core as a
 
 DATA_AI_ROLES = ["data", "ai_ml"]
 GROUPS = {"Data": ["data"], "AI / ML": ["ai_ml"]}

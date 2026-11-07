@@ -20,11 +20,11 @@ SPENDING. A Jev call costs about $0.000022 (part 1's own estimate). Nothing is s
 unless you pass ``--yes``. Needs TYPESAFE_API_KEY in the environment or in ``.env.local``
 (git-ignored).
 
-    uv run python 04-filter-it-with-jev.py --dry-run
-    uv run python 04-filter-it-with-jev.py --limit 1000 --yes      # pilot
-    uv run python 04-filter-it-with-jev.py --yes                   # everything
-    uv run python 04-filter-it-with-jev.py --yes --workers 64      # parallel requests
-    uv run python 04-filter-it-with-jev.py --write-only            # rebuild from the cache
+    uv run python pipeline/04-filter-it-with-jev.py --dry-run
+    uv run python pipeline/04-filter-it-with-jev.py --limit 1000 --yes      # pilot
+    uv run python pipeline/04-filter-it-with-jev.py --yes                   # everything
+    uv run python pipeline/04-filter-it-with-jev.py --yes --workers 64      # parallel requests
+    uv run python pipeline/04-filter-it-with-jev.py --write-only            # rebuild from the cache
 """
 
 from __future__ import annotations
@@ -34,8 +34,8 @@ from pathlib import Path
 
 import duckdb
 
-import jev
-from common import (
+from vnjobs import jev
+from vnjobs.common import (
     AMBIGUOUS_DIR,
     DATA_DIR,
     FINGERPRINT_DIR,

@@ -637,3 +637,193 @@ def parse_salary(text: str | None) -> tuple[float | None, float | None, bool]:
     if not (MIN_MONTHLY_VND <= low <= MAX_MONTHLY_VND):
         return None, None, False
     return low, high, False
+
+
+# --- languages, degree, sectors, benefits ----------------------------------------------
+# Each language flag fires when the title or description *mentions* the language or its
+# certificate. A mention is not always a requirement, so the notebooks call it "mentions".
+LANGUAGE_PATTERNS = {
+    "japanese": re.compile(r"(japanese|tiếng nhật|nhật ngữ|jlpt|bridge se|\bbse\b|comtor|[぀-ヿ])"),
+    "english": re.compile(r"(english|tiếng anh|ielts|toeic|toefl)"),
+    "korean": re.compile(r"(korean|tiếng hàn|topik|[가-힯])"),
+    "chinese": re.compile(r"(chinese|tiếng trung|tiếng hoa|mandarin|\bhsk\b)"),
+}
+
+
+def find_languages(text: str) -> dict[str, bool]:
+    """Say which foreign languages a piece of lower-cased text mentions.
+
+    Args:
+        text: Lower-cased title plus description.
+
+    Returns:
+        ``{"japanese": ..., "english": ..., "korean": ..., "chinese": ...}``.
+    """
+    return {name: bool(pattern.search(text)) for name, pattern in LANGUAGE_PATTERNS.items()}
+
+
+# Lowest first: when a posting accepts several levels, its minimum is the lowest it lists.
+DEGREE_RULES = (
+    ("high_school", ("high school", "trung học", "thpt")),
+    (
+        "associate_or_certificate",
+        ("associate", "cao đẳng", "professional certificate", "trung cấp"),
+    ),
+    ("bachelor", ("bachelor", "đại học", "university", "engineer's degree")),
+    ("master", ("master", "thạc sĩ", "postgraduate")),
+)
+
+
+def minimum_degree(labels: list[str]) -> str | None:
+    """Read the lowest degree a posting accepts from its education labels.
+
+    Args:
+        labels: Values such as ``"credentialCategory: bachelor degree"`` or
+            ``"alternateName: Đại học"``.
+
+    Returns:
+        ``high_school``, ``associate_or_certificate``, ``bachelor`` or ``master``; ``None``
+        when no label names a degree.
+    """
+    joined = " ".join(labels).lower()
+    for degree, words in DEGREE_RULES:
+        if any(word in joined for word in words):
+            return degree
+    return None
+
+
+# Industry tags differ by board (Vietnamese on CareerBuilder, English on LinkedIn), so they
+# are grouped into sectors by keyword; one tag can belong to several sectors.
+SECTOR_RULES = (
+    (
+        "Banking & finance",
+        (
+            "bank",
+            "ngân hàng",
+            "financ",
+            "tài chính",
+            "fintech",
+            "insurance",
+            "bảo hiểm",
+            "securities",
+            "chứng khoán",
+            "investment",
+            "payment",
+        ),
+    ),
+    (
+        "IT services & software",
+        (
+            "it services",
+            "software",
+            "phần mềm",
+            "cntt",
+            "it - ",
+            "information technology",
+            "consulting",
+            "tư vấn",
+            "computer",
+            "internet",
+            "technology",
+            "công nghệ thông tin",
+        ),
+    ),
+    ("Telecom", ("telecom", "viễn thông")),
+    (
+        "Manufacturing & electronics",
+        (
+            "electrical",
+            "điện",
+            "electronic",
+            "mechanical",
+            "cơ khí",
+            "manufactur",
+            "sản xuất",
+            "automotive",
+            "ô tô",
+            "auto",
+            "industrial",
+            "semiconductor",
+            "hardware",
+            "machinery",
+        ),
+    ),
+    (
+        "Retail & e-commerce",
+        (
+            "retail",
+            "bán lẻ",
+            "e-commerce",
+            "ecommerce",
+            "thương mại điện tử",
+            "consumer",
+            "fmcg",
+            "wholesale",
+        ),
+    ),
+    ("Logistics & transport", ("logistics", "transport", "vận tải", "shipping", "supply chain")),
+    ("Healthcare & pharma", ("health", "y tế", "pharma", "dược", "medical", "biotech")),
+    ("Education", ("education", "giáo dục", "e-learning")),
+    (
+        "Media, games & ads",
+        ("game", "media", "entertainment", "advertising", "quảng cáo", "marketing", "truyền thông"),
+    ),
+    (
+        "Energy, construction & property",
+        (
+            "energy",
+            "năng lượng",
+            "construction",
+            "xây dựng",
+            "real estate",
+            "bất động sản",
+            "oil",
+            "utilities",
+        ),
+    ),
+)
+
+
+def sectors_of(industries: list[str]) -> list[str]:
+    """Group a posting's industry tags into sectors.
+
+    Args:
+        industries: The ``INDUSTRIES`` tag values.
+
+    Returns:
+        The sectors any tag belongs to, each once; ``["Other"]`` when none match and tags exist,
+        ``[]`` when there are no tags.
+    """
+    if not industries:
+        return []
+    joined = " | ".join(industries).lower()
+    found = [name for name, words in SECTOR_RULES if any(word in joined for word in words)]
+    return found or ["Other"]
+
+
+BENEFIT_WORDS = {
+    "insurance": ("bảo hiểm", "insurance"),
+    "training": ("đào tạo", "training"),
+    "salary_review": ("tăng lương", "salary review"),
+    "bonus": ("thưởng", "bonus"),
+    "health_care": ("sức khỏe", "healthcare", "health care"),
+    "travel": ("du lịch", "travel"),
+    "annual_leave": ("nghỉ phép", "annual leave"),
+    "laptop": ("laptop",),
+    "allowance": ("phụ cấp", "allowance"),
+    "uniform": ("đồng phục", "uniform"),
+    "sport_club": ("sport", "thể thao"),
+}
+
+
+def benefits_of(tags: list[str]) -> list[str]:
+    """Normalise a posting's ``COMPANY_BENEFITS`` tags.
+
+    Args:
+        tags: Benefit tags in Vietnamese or English.
+
+    Returns:
+        The canonical benefit names present, each once.
+    """
+    joined = " | ".join(tags).lower()
+    return [name for name, words in BENEFIT_WORDS.items() if any(w in joined for w in words)]

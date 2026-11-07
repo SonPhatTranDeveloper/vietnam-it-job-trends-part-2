@@ -12,8 +12,8 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.figure import Figure
 
-import analysis as a
-import taxonomy as tx
+from vnjobs import taxonomy as tx
+from vnjobs.analysis import core as a
 
 TOP_N = 25
 PANELS = 16

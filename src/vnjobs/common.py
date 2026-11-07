@@ -6,7 +6,8 @@ from pathlib import Path
 
 import duckdb
 
-DATA_DIR = Path("data")
+PROJECT_ROOT = Path(__file__).resolve().parents[2]  # src/vnjobs/common.py -> repo root
+DATA_DIR = PROJECT_ROOT / "data"
 SOURCE_DIR = DATA_DIR / "job-dataset"  # symlink to the Techmap JSONL feed
 STAGING_DIR = DATA_DIR / "staging"
 DEDUP_DIR = DATA_DIR / "step-02-dedup"

@@ -10,8 +10,12 @@ row per IT posting (repeats stay in, marked ``fp_dup``) and no description text.
   required experience when the feed states one.
 * ``work_mode``, ``city_group``, ``company_key`` / ``company_group``.
 * ``salary_low`` / ``salary_high`` (VND per month) and ``salary_negotiable``.
+* ``lang_japanese`` / ``lang_english`` / ``lang_korean`` / ``lang_chinese``: the description
+  mentions the language or its certificate.
+* ``degree`` (the lowest degree the posting accepts), ``sectors`` (industry tags grouped) and
+  ``benefits`` (the board's benefit tags, normalised).
 
-    uv run python 05-extract-features.py
+    uv run python pipeline/05-extract-features.py
 """
 
 from __future__ import annotations
@@ -26,8 +30,8 @@ import duckdb
 import pyarrow as pa
 import pyarrow.parquet as pq
 
-import taxonomy as tx
-from common import DATA_DIR, FEATURES_DIR, IT_DIR, connect, month_of
+from vnjobs import taxonomy as tx
+from vnjobs.common import DATA_DIR, FEATURES_DIR, IT_DIR, connect, month_of
 
 REPORT_PATH = DATA_DIR / "step-05-report.csv"
 MIN_TEXT_CHARS = 200  # shorter descriptions are treated as "no description"
@@ -58,6 +62,13 @@ SCHEMA = pa.schema(
         ("salary_low", pa.float64()),
         ("salary_high", pa.float64()),
         ("salary_negotiable", pa.bool_()),
+        ("lang_japanese", pa.bool_()),
+        ("lang_english", pa.bool_()),
+        ("lang_korean", pa.bool_()),
+        ("lang_chinese", pa.bool_()),
+        ("degree", pa.string()),
+        ("sectors", pa.list_(pa.string())),
+        ("benefits", pa.list_(pa.string())),
     ]
 )
 
@@ -127,6 +138,22 @@ def salary_features(salary_text: str | None) -> dict[str, Any]:
     return {"salary_low": low, "salary_high": high, "salary_negotiable": negotiable}
 
 
+def tag_features(tags: dict[str, Any]) -> dict[str, Any]:
+    """Compute the education, industry and benefit features from the decoded ``orgTags``.
+
+    Args:
+        tags: The decoded ``orgTags``.
+
+    Returns:
+        ``degree``, ``sectors`` and ``benefits``.
+    """
+    return {
+        "degree": tx.minimum_degree(tag_list(tags, "EDUCATION_REQUIREMENTS")),
+        "sectors": tx.sectors_of(tag_list(tags, "INDUSTRIES")),
+        "benefits": tx.benefits_of(tag_list(tags, "COMPANY_BENEFITS")),
+    }
+
+
 def row_features(row: dict[str, Any]) -> dict[str, Any]:
     """Compute every feature for one posting.
 
@@ -159,6 +186,11 @@ def row_features(row: dict[str, Any]) -> dict[str, Any]:
         "company_group": tx.company_group(key),
         **level_features(title, row["career_level"], tags),
         **salary_features(row["salary_text"]),
+        **{
+            f"lang_{name}": hit
+            for name, hit in tx.find_languages(f"{title} {text}".lower()).items()
+        },
+        **tag_features(tags),
     }
 
 

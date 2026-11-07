@@ -1,585 +1,593 @@
 month,source,it_postings
-2020-01,Monster Asia,164
 2020-01,Indeed,343
+2020-01,Monster Asia,164
 2020-02,Indeed,509
 2020-02,Monster Asia,10
-2020-03,Monster Asia,5
 2020-03,Indeed,425
-2020-04,Monster Asia,1
+2020-03,Monster Asia,5
 2020-04,Indeed,370
+2020-04,Monster Asia,1
 2020-05,Monster Asia,2
 2020-05,Indeed,464
-2020-06,Indeed,541
 2020-06,Monster Asia,7
+2020-06,Indeed,541
 2020-07,Indeed,364
 2020-08,Indeed,388
 2020-09,Indeed,672
 2020-09,Monster Asia,5
-2020-10,Monster Asia,13
 2020-10,Indeed,314
+2020-10,Monster Asia,13
+2020-11,Monster Asia,11
 2020-11,Indeed,209
 2020-11,CareerBuilder,48
-2020-11,Monster Asia,11
 2020-12,CareerBuilder,1753
 2020-12,Monster Asia,25
 2021-01,CareerBuilder,915
 2021-01,Monster Asia,26
-2021-02,Monster Asia,47
 2021-02,CareerBuilder,768
-2021-03,Monster Asia,16
+2021-02,Monster Asia,47
 2021-03,CareerBuilder,1325
-2021-04,CareerBuilder,694
+2021-03,Monster Asia,16
 2021-04,Monster Asia,60
-2021-05,Monster Asia,80
+2021-04,CareerBuilder,694
 2021-05,CareerBuilder,233
+2021-05,Monster Asia,80
 2021-06,CareerBuilder,2092
 2021-06,Monster Asia,33
-2021-07,CareerBuilder,821
 2021-07,Monster Asia,41
-2021-08,Monster Asia,47
+2021-07,CareerBuilder,821
 2021-08,CareerBuilder,702
-2021-09,CareerBuilder,818
+2021-08,Monster Asia,47
 2021-09,Monster Asia,53
-2021-10,CareerBuilder,1089
+2021-09,CareerBuilder,818
 2021-10,Monster Asia,47
-2021-11,Monster Asia,84
-2021-11,stackoverflow_vn,1
+2021-10,CareerBuilder,1089
 2021-11,CareerBuilder,1160
+2021-11,stackoverflow_vn,1
+2021-11,Monster Asia,84
 2021-12,CareerBuilder,984
 2021-12,Monster Asia,78
-2022-01,CareerBuilder,700
 2022-01,Monster Asia,68
-2022-02,Monster Asia,58
+2022-01,CareerBuilder,700
 2022-02,CareerBuilder,841
+2022-02,Monster Asia,58
+2022-03,Monster Asia,66
 2022-03,CareerBuilder,1008
 2022-03,LinkedIn,1
-2022-03,Monster Asia,66
-2022-04,CareerBuilder,557
 2022-04,Monster Asia,83
-2022-05,CareerBuilder,1000
+2022-04,CareerBuilder,557
 2022-05,Monster Asia,50
-2022-06,Monster Asia,100
+2022-05,CareerBuilder,1000
 2022-06,CareerBuilder,832
-2022-07,CareerBuilder,107
-2022-07,Monster Asia,70
+2022-06,Monster Asia,100
 2022-07,xing_vn,1
-2022-08,Monster Asia,71
+2022-07,Monster Asia,70
+2022-07,CareerBuilder,107
 2022-08,CareerBuilder,809
-2022-09,Monster Asia,58
+2022-08,Monster Asia,71
 2022-09,CareerBuilder,329
+2022-09,Monster Asia,58
+2022-10,CareerBuilder,1423
 2022-10,xing_vn,1
 2022-10,Monster Asia,42
-2022-10,CareerBuilder,1423
 2022-11,CareerBuilder,741
 2022-11,Monster Asia,34
-2022-12,LinkedIn,1
-2022-12,Monster Asia,19
-2022-12,xing_vn,1
 2022-12,CareerBuilder,476
+2022-12,LinkedIn,1
+2022-12,xing_vn,1
+2022-12,Monster Asia,19
+2023-01,Monster Asia,36
 2023-01,CareerBuilder,396
 2023-01,LinkedIn,69
-2023-01,Monster Asia,36
-2023-02,Monster Asia,44
-2023-02,Jora,3669
-2023-02,CareerBuilder,780
 2023-02,Indeed,330
 2023-02,LinkedIn,237
+2023-02,Jora,3669
+2023-02,CareerBuilder,780
+2023-02,Monster Asia,44
+2023-03,CareerBuilder,686
 2023-03,Indeed,1020
 2023-03,LinkedIn,251
-2023-03,Jora,1352
 2023-03,Monster Asia,29
-2023-03,CareerBuilder,686
+2023-03,Jora,1352
 2023-04,Monster Asia,49
 2023-04,LinkedIn,289
 2023-04,Indeed,486
 2023-04,CareerBuilder,603
-2023-05,Monster Asia,43
-2023-05,LinkedIn,439
-2023-05,Indeed,11
 2023-05,CareerBuilder,589
+2023-05,Indeed,11
+2023-05,LinkedIn,439
+2023-05,Monster Asia,43
 2023-06,Monster Asia,40
 2023-06,Indeed,366
 2023-06,LinkedIn,304
 2023-06,CareerBuilder,579
+2023-07,Monster Asia,21
 2023-07,CareerBuilder,509
 2023-07,Indeed,20
 2023-07,LinkedIn,212
-2023-07,Monster Asia,21
-2023-08,CareerBuilder,590
-2023-08,Monster Asia,91
 2023-08,Indeed,3
 2023-08,LinkedIn,277
 2023-08,CareerJet,372
+2023-08,CareerBuilder,590
+2023-08,Monster Asia,91
+2023-09,Monster Asia,140
 2023-09,CareerBuilder,513
-2023-09,Indeed,14
 2023-09,LinkedIn,375
 2023-09,CareerJet,387
-2023-09,Monster Asia,140
-2023-10,Monster Asia,217
-2023-10,Indeed,103
-2023-10,LinkedIn,261
-2023-10,CareerBuilder,654
+2023-09,Indeed,14
 2023-10,Jora,2158
-2023-11,Monster Asia,247
-2023-11,Jora,1723
-2023-11,CareerJet,317
-2023-11,Indeed,170
-2023-11,LinkedIn,223
+2023-10,Monster Asia,217
+2023-10,LinkedIn,261
+2023-10,Indeed,103
+2023-10,CareerBuilder,654
 2023-11,CareerBuilder,553
+2023-11,Jora,1723
+2023-11,Indeed,170
+2023-11,CareerJet,317
+2023-11,LinkedIn,223
+2023-11,Monster Asia,247
+2023-12,Monster Asia,181
 2023-12,Jora,1612
 2023-12,Indeed,19
-2023-12,LinkedIn,198
 2023-12,CareerJet,216
+2023-12,LinkedIn,198
 2023-12,CareerBuilder,430
-2023-12,Monster Asia,181
-2024-01,CareerBuilder,537
-2024-01,Jora,1237
-2024-01,Monster Asia,196
 2024-01,Indeed,115
 2024-01,CareerJet,164
 2024-01,LinkedIn,134
+2024-01,CareerBuilder,537
+2024-01,Monster Asia,196
+2024-01,Jora,1237
+2024-02,Jora,2124
 2024-02,teamtailor_vn,1
+2024-02,trakstar_vn,1
+2024-02,recruitee_vn,4
+2024-02,Monster Asia,88
 2024-02,workday_vn,4
 2024-02,Manatal,31
 2024-02,CareerBuilder,518
-2024-02,trakstar_vn,1
 2024-02,CareerJet,103
-2024-02,LinkedIn,75
 2024-02,Zoho Recruit,1
 2024-02,Indeed,1
-2024-02,recruitee_vn,4
-2024-02,Monster Asia,88
-2024-02,Jora,2124
+2024-02,LinkedIn,75
+2024-03,efinancialcareers_vn,1
+2024-03,Jora,1806
 2024-03,Monster Asia,105
-2024-03,recruitee_vn,2
-2024-03,workable_vn,4
+2024-03,Zoho Recruit,1
+2024-03,Indeed,1
 2024-03,CareerJet,17
 2024-03,LinkedIn,48
-2024-03,Indeed,1
-2024-03,Zoho Recruit,1
-2024-03,trakstar_vn,5
+2024-03,workday_vn,1
 2024-03,Manatal,252
 2024-03,CareerBuilder,500
-2024-03,workday_vn,1
 2024-03,teamtailor_vn,6
-2024-03,Jora,1806
-2024-03,efinancialcareers_vn,1
+2024-03,recruitee_vn,2
+2024-03,workable_vn,4
+2024-03,trakstar_vn,5
+2024-04,icims_vn,1
+2024-04,Jora,2361
 2024-04,teamtailor_vn,3
-2024-04,CareerBuilder,431
+2024-04,trakstar_vn,8
+2024-04,workable_vn,2
+2024-04,recruitee_vn,2
+2024-04,successfactors_vn,2
+2024-04,Monster Asia,95
 2024-04,workday_vn,3
 2024-04,Manatal,59
-2024-04,trakstar_vn,8
-2024-04,CareerJet,1
+2024-04,CareerBuilder,431
 2024-04,LinkedIn,9
-2024-04,recruitee_vn,2
-2024-04,workable_vn,2
-2024-04,Monster Asia,95
-2024-04,successfactors_vn,2
-2024-04,Jora,2361
-2024-04,icims_vn,1
-2024-05,Zoho Recruit,1
-2024-05,CareerJet,212
-2024-05,LinkedIn,316
-2024-05,Indeed,37
-2024-05,Jora,2660
-2024-05,successfactors_vn,8
-2024-05,Monster Asia,71
-2024-05,teamtailor_vn,22
-2024-05,personio_vn,3
-2024-05,efinancialcareers_vn,7
-2024-05,trakstar_vn,7
-2024-05,breezy_vn,2
-2024-05,recruitee_vn,3
-2024-05,workable_vn,6
+2024-04,CareerJet,1
+2024-05,CareerBuilder,603
 2024-05,Manatal,36
 2024-05,workday_vn,3
-2024-05,CareerBuilder,603
-2024-06,efinancialcareers_vn,5
-2024-06,personio_vn,3
-2024-06,greenhouse_vn,2
-2024-06,Manatal,19
-2024-06,CareerBuilder,134
-2024-06,recruitee_vn,3
-2024-06,breezy_vn,1
-2024-06,taleo_vn,1
-2024-06,workable_vn,2
-2024-06,Zoho Recruit,2
-2024-06,LinkedIn,311
-2024-06,Indeed,20
-2024-06,Jora,2293
+2024-05,breezy_vn,2
+2024-05,workable_vn,6
+2024-05,recruitee_vn,3
+2024-05,LinkedIn,316
+2024-05,Indeed,37
+2024-05,Zoho Recruit,1
+2024-05,CareerJet,212
+2024-05,Monster Asia,71
+2024-05,successfactors_vn,8
+2024-05,efinancialcareers_vn,7
+2024-05,personio_vn,3
+2024-05,trakstar_vn,7
+2024-05,Jora,2660
+2024-05,teamtailor_vn,22
+2024-06,successfactors_vn,4
+2024-06,SmartRecruiters,43
 2024-06,Lever,5
 2024-06,teamtailor_vn,8
-2024-06,SmartRecruiters,43
-2024-06,successfactors_vn,4
+2024-06,personio_vn,3
+2024-06,efinancialcareers_vn,5
+2024-06,Manatal,19
+2024-06,greenhouse_vn,2
+2024-06,CareerBuilder,134
+2024-06,Indeed,20
+2024-06,Zoho Recruit,2
+2024-06,LinkedIn,311
+2024-06,Jora,2293
+2024-06,workable_vn,2
+2024-06,breezy_vn,1
+2024-06,taleo_vn,1
+2024-06,recruitee_vn,3
+2024-07,Jora,2125
+2024-07,efinancialcareers_vn,1
+2024-07,personio_vn,1
 2024-07,teamtailor_vn,3
 2024-07,Lever,8
+2024-07,trakstar_vn,1
+2024-07,join_vn,1
+2024-07,breezy_vn,1
+2024-07,taleo_vn,1
+2024-07,recruitee_vn,3
+2024-07,successfactors_vn,10
+2024-07,Monster Asia,92
+2024-07,SmartRecruiters,104
 2024-07,CareerBuilder,258
 2024-07,Manatal,37
 2024-07,greenhouse_vn,8
-2024-07,trakstar_vn,1
-2024-07,join_vn,1
-2024-07,Zoho Recruit,13
-2024-07,CareerJet,279
-2024-07,LinkedIn,442
 2024-07,Indeed,102
-2024-07,taleo_vn,1
-2024-07,recruitee_vn,3
-2024-07,breezy_vn,1
-2024-07,Monster Asia,92
-2024-07,SmartRecruiters,104
-2024-07,successfactors_vn,10
-2024-07,efinancialcareers_vn,1
-2024-07,personio_vn,1
-2024-07,Jora,2125
-2024-08,efinancialcareers_vn,2
-2024-08,join_vn,1
-2024-08,trakstar_vn,5
-2024-08,Manatal,62
-2024-08,workday_vn,1
-2024-08,CareerBuilder,396
-2024-08,taleo_vn,1
-2024-08,recruitee_vn,2
-2024-08,breezy_vn,2
-2024-08,Zoho Recruit,14
-2024-08,Indeed,213
-2024-08,LinkedIn,82
-2024-08,CareerJet,784
-2024-08,Jora,1180
-2024-08,teamtailor_vn,12
-2024-08,Lever,16
+2024-07,LinkedIn,442
+2024-07,CareerJet,279
+2024-07,Zoho Recruit,13
+2024-08,successfactors_vn,4
 2024-08,Monster Asia,368
 2024-08,xing_vn,1
 2024-08,SmartRecruiters,162
-2024-08,successfactors_vn,4
-2024-09,workday_vn,1
-2024-09,Manatal,64
-2024-09,CareerBuilder,376
-2024-09,greenhouse_vn,2
-2024-09,teamtailor_vn,1
-2024-09,Lever,6
-2024-09,personio_vn,3
-2024-09,Jora,653
-2024-09,Monster Asia,506
-2024-09,successfactors_vn,7
-2024-09,SmartRecruiters,161
-2024-09,recruitee_vn,10
-2024-09,breezy_vn,2
-2024-09,trakstar_vn,1
+2024-08,Lever,16
+2024-08,teamtailor_vn,12
+2024-08,efinancialcareers_vn,2
+2024-08,CareerBuilder,396
+2024-08,Manatal,62
+2024-08,workday_vn,1
+2024-08,Zoho Recruit,14
+2024-08,CareerJet,784
+2024-08,Indeed,213
+2024-08,LinkedIn,82
+2024-08,Jora,1180
+2024-08,join_vn,1
+2024-08,trakstar_vn,5
+2024-08,taleo_vn,1
+2024-08,recruitee_vn,2
+2024-08,breezy_vn,2
+2024-09,Zoho Recruit,10
+2024-09,CareerJet,352
 2024-09,Indeed,142
 2024-09,LinkedIn,49
-2024-09,CareerJet,352
-2024-09,Zoho Recruit,10
+2024-09,trakstar_vn,1
+2024-09,workday_vn,1
+2024-09,greenhouse_vn,2
+2024-09,Manatal,64
+2024-09,CareerBuilder,376
+2024-09,personio_vn,3
+2024-09,Monster Asia,506
+2024-09,SmartRecruiters,161
+2024-09,successfactors_vn,7
+2024-09,recruitee_vn,10
+2024-09,breezy_vn,2
+2024-09,teamtailor_vn,1
+2024-09,Lever,6
+2024-09,Jora,653
+2024-10,workable_vn,1
+2024-10,taleo_vn,1
+2024-10,recruitee_vn,13
+2024-10,Manatal,72
+2024-10,workday_vn,1
+2024-10,greenhouse_vn,1
 2024-10,Techmap,28
 2024-10,trakstar_vn,1
 2024-10,join_vn,2
-2024-10,personio_vn,2
-2024-10,Lever,8
 2024-10,teamtailor_vn,3
-2024-10,SmartRecruiters,114
-2024-10,Monster Asia,85
-2024-10,successfactors_vn,3
-2024-10,xing_vn,1
-2024-10,Jora,448
+2024-10,Lever,8
 2024-10,icims_vn,1
+2024-10,Jora,448
+2024-10,stepstone_vn,1
 2024-10,CareerJet,378
 2024-10,LinkedIn,171
 2024-10,Zoho Recruit,3
-2024-10,stepstone_vn,1
-2024-10,Manatal,72
-2024-10,greenhouse_vn,1
-2024-10,workday_vn,1
-2024-10,recruitee_vn,13
-2024-10,workable_vn,1
-2024-10,taleo_vn,1
+2024-10,personio_vn,2
+2024-10,successfactors_vn,3
+2024-10,xing_vn,1
+2024-10,SmartRecruiters,114
+2024-10,Monster Asia,85
+2024-11,SmartRecruiters,69
+2024-11,Monster Asia,60
+2024-11,Lever,8
 2024-11,personio_vn,3
-2024-11,Techmap,4
-2024-11,join_vn,1
-2024-11,trakstar_vn,1
 2024-11,Manatal,20
 2024-11,workday_vn,1
-2024-11,greenhouse_vn,3
 2024-11,CareerBuilder,242
-2024-11,breezy_vn,3
-2024-11,recruitee_vn,4
+2024-11,greenhouse_vn,3
 2024-11,CareerJet,459
 2024-11,Zoho Recruit,5
 2024-11,LinkedIn,104
-2024-11,Jora,293
 2024-11,icims_vn,1
-2024-11,Lever,8
-2024-11,SmartRecruiters,69
-2024-11,Monster Asia,60
-2024-12,CareerJet,356
-2024-12,Zoho Recruit,9
-2024-12,LinkedIn,22
-2024-12,Jora,642
-2024-12,icims_vn,3
-2024-12,SmartRecruiters,63
-2024-12,teamtailor_vn,1
-2024-12,Lever,6
-2024-12,personio_vn,3
-2024-12,Techmap,1
-2024-12,recruitee_vn,3
-2024-12,jazzhr_vn,1
-2024-12,taleo_vn,1
+2024-11,Jora,293
+2024-11,join_vn,1
+2024-11,Techmap,4
+2024-11,trakstar_vn,1
+2024-11,recruitee_vn,4
+2024-11,breezy_vn,3
 2024-12,Manatal,12
 2024-12,workday_vn,1
 2024-12,CareerBuilder,341
+2024-12,jazzhr_vn,1
+2024-12,recruitee_vn,3
+2024-12,taleo_vn,1
+2024-12,Zoho Recruit,9
+2024-12,CareerJet,356
+2024-12,LinkedIn,22
+2024-12,SmartRecruiters,63
+2024-12,personio_vn,3
+2024-12,Techmap,1
+2024-12,Jora,642
+2024-12,icims_vn,3
+2024-12,teamtailor_vn,1
+2024-12,Lever,6
+2025-01,personio_vn,3
+2025-01,Jora,428
 2025-01,SmartRecruiters,43
 2025-01,Monster Asia,6
-2025-01,jazzhr_vn,1
-2025-01,recruitee_vn,9
-2025-01,breezy_vn,1
-2025-01,CareerJet,373
 2025-01,LinkedIn,53
 2025-01,Zoho Recruit,3
-2025-01,trakstar_vn,2
-2025-01,workday_vn,2
-2025-01,CareerBuilder,248
+2025-01,CareerJet,373
 2025-01,greenhouse_vn,1
 2025-01,Manatal,14
+2025-01,workday_vn,2
+2025-01,CareerBuilder,248
 2025-01,teamtailor_vn,1
 2025-01,Lever,5
-2025-01,Jora,428
-2025-01,personio_vn,3
-2025-02,breezy_vn,3
-2025-02,recruitee_vn,4
-2025-02,SmartRecruiters,105
-2025-02,Monster Asia,1
-2025-02,icims_vn,5
-2025-02,Jora,1541
-2025-02,personio_vn,3
-2025-02,teamtailor_vn,2
-2025-02,Lever,15
-2025-02,Manatal,24
-2025-02,CareerBuilder,561
-2025-02,LinkedIn,146
+2025-01,jazzhr_vn,1
+2025-01,breezy_vn,1
+2025-01,recruitee_vn,9
+2025-01,trakstar_vn,2
+2025-02,Techmap,1
+2025-02,join_vn,2
 2025-02,Zoho Recruit,11
 2025-02,CareerJet,404
-2025-02,join_vn,2
-2025-02,Techmap,1
-2025-03,greenhouse_vn,2
-2025-03,Manatal,45
-2025-03,CareerBuilder,471
-2025-03,teamtailor_vn,2
-2025-03,Lever,12
-2025-03,efinancialcareers_vn,1
-2025-03,Jora,1178
-2025-03,Monster Asia,4
-2025-03,SmartRecruiters,120
-2025-03,recruitee_vn,9
-2025-03,breezy_vn,4
-2025-03,join_vn,1
+2025-02,LinkedIn,146
+2025-02,recruitee_vn,4
+2025-02,breezy_vn,3
+2025-02,Jora,1541
+2025-02,icims_vn,5
+2025-02,Lever,15
+2025-02,teamtailor_vn,2
+2025-02,Manatal,24
+2025-02,CareerBuilder,561
+2025-02,Monster Asia,1
+2025-02,SmartRecruiters,105
+2025-02,personio_vn,3
+2025-03,CareerJet,235
+2025-03,Zoho Recruit,14
+2025-03,LinkedIn,5
 2025-03,trakstar_vn,3
 2025-03,Techmap,2
-2025-03,LinkedIn,5
-2025-03,Zoho Recruit,14
-2025-03,CareerJet,235
+2025-03,join_vn,1
+2025-03,Manatal,45
+2025-03,CareerBuilder,471
+2025-03,greenhouse_vn,2
+2025-03,efinancialcareers_vn,1
+2025-03,SmartRecruiters,120
+2025-03,Monster Asia,4
+2025-03,breezy_vn,4
+2025-03,recruitee_vn,9
+2025-03,Lever,12
+2025-03,teamtailor_vn,2
+2025-03,Jora,1178
+2025-04,personio_vn,2
+2025-04,efinancialcareers_vn,1
+2025-04,Jora,913
+2025-04,icims_vn,2
 2025-04,SmartRecruiters,80
 2025-04,Monster Asia,4
-2025-04,breezy_vn,7
-2025-04,recruitee_vn,4
-2025-04,Zoho Recruit,24
 2025-04,CareerJet,150
-2025-04,trakstar_vn,3
-2025-04,Techmap,6
+2025-04,Zoho Recruit,24
 2025-04,workday_vn,1
 2025-04,Manatal,10
 2025-04,CareerBuilder,388
-2025-04,teamtailor_vn,5
 2025-04,Lever,12
-2025-04,icims_vn,2
-2025-04,Jora,913
-2025-04,personio_vn,2
-2025-04,efinancialcareers_vn,1
+2025-04,teamtailor_vn,5
+2025-04,breezy_vn,7
+2025-04,recruitee_vn,4
+2025-04,trakstar_vn,3
+2025-04,Techmap,6
+2025-05,Lever,12
+2025-05,Monster Asia,32
+2025-05,SmartRecruiters,31
 2025-05,icims_vn,1
 2025-05,Jora,1520
-2025-05,CareerJet,176
-2025-05,Zoho Recruit,57
 2025-05,breezy_vn,2
 2025-05,recruitee_vn,1
-2025-05,workday_vn,5
-2025-05,Manatal,15
-2025-05,CareerBuilder,396
 2025-05,Techmap,3
 2025-05,trakstar_vn,4
 2025-05,personio_vn,1
-2025-05,Monster Asia,32
-2025-05,SmartRecruiters,31
-2025-05,Lever,12
+2025-05,Zoho Recruit,57
+2025-05,CareerJet,176
+2025-05,CareerBuilder,396
+2025-05,Manatal,15
+2025-05,workday_vn,5
+2025-06,CareerJet,165
+2025-06,LinkedIn,58
+2025-06,Zoho Recruit,17
+2025-06,join_vn,1
+2025-06,trakstar_vn,3
+2025-06,Techmap,6
 2025-06,CareerBuilder,396
 2025-06,Manatal,31
 2025-06,workday_vn,1
-2025-06,Lever,12
-2025-06,teamtailor_vn,2
 2025-06,personio_vn,3
-2025-06,Jora,1605
-2025-06,icims_vn,1
-2025-06,SmartRecruiters,27
 2025-06,Monster Asia,11
+2025-06,SmartRecruiters,27
 2025-06,recruitee_vn,3
 2025-06,breezy_vn,3
-2025-06,trakstar_vn,3
-2025-06,join_vn,1
-2025-06,Techmap,6
-2025-06,LinkedIn,58
-2025-06,CareerJet,165
-2025-06,Zoho Recruit,17
-2025-07,Lever,11
-2025-07,teamtailor_vn,2
-2025-07,CareerBuilder,446
-2025-07,greenhouse_vn,19
-2025-07,Manatal,52
-2025-07,trakstar_vn,5
-2025-07,Techmap,19
-2025-07,Zoho Recruit,18
-2025-07,CareerJet,335
-2025-07,LinkedIn,1438
-2025-07,recruitee_vn,6
-2025-07,breezy_vn,4
-2025-07,SmartRecruiters,20
-2025-07,Monster Asia,62
+2025-06,teamtailor_vn,2
+2025-06,Lever,12
+2025-06,icims_vn,1
+2025-06,Jora,1605
+2025-07,Jora,2152
 2025-07,personio_vn,2
 2025-07,efinancialcareers_vn,1
-2025-07,Jora,2152
-2025-08,Manatal,16
-2025-08,greenhouse_vn,18
-2025-08,CareerBuilder,364
-2025-08,teamtailor_vn,2
-2025-08,Lever,14
-2025-08,personio_vn,2
-2025-08,Jora,2260
-2025-08,icims_vn,1
-2025-08,SmartRecruiters,44
-2025-08,Monster Asia,158
-2025-08,recruitee_vn,14
-2025-08,workable_vn,2
-2025-08,breezy_vn,1
-2025-08,trakstar_vn,8
-2025-08,Techmap,117
-2025-08,join_vn,1
+2025-07,Lever,11
+2025-07,teamtailor_vn,2
+2025-07,trakstar_vn,5
+2025-07,Techmap,19
+2025-07,breezy_vn,4
+2025-07,recruitee_vn,6
+2025-07,SmartRecruiters,20
+2025-07,Monster Asia,62
+2025-07,Manatal,52
+2025-07,greenhouse_vn,19
+2025-07,CareerBuilder,446
+2025-07,CareerJet,335
+2025-07,Zoho Recruit,18
+2025-07,LinkedIn,1438
 2025-08,CareerJet,315
 2025-08,LinkedIn,733
 2025-08,Zoho Recruit,23
-2025-09,CareerBuilder,328
-2025-09,Manatal,8
-2025-09,DEjobs,30
-2025-09,greenhouse_vn,11
-2025-09,workday_vn,1
-2025-09,Lever,8
-2025-09,efinancialcareers_vn,2
-2025-09,Jora,1548
-2025-09,SmartRecruiters,31
-2025-09,Monster Asia,67
-2025-09,breezy_vn,2
-2025-09,recruitee_vn,8
-2025-09,workable_vn,1
+2025-08,join_vn,1
+2025-08,trakstar_vn,8
+2025-08,Techmap,117
+2025-08,CareerBuilder,364
+2025-08,greenhouse_vn,18
+2025-08,Manatal,16
+2025-08,personio_vn,2
+2025-08,SmartRecruiters,44
+2025-08,Monster Asia,158
+2025-08,breezy_vn,1
+2025-08,workable_vn,2
+2025-08,recruitee_vn,14
+2025-08,Lever,14
+2025-08,teamtailor_vn,2
+2025-08,Jora,2260
+2025-08,icims_vn,1
+2025-09,CareerJet,397
+2025-09,LinkedIn,2529
+2025-09,Zoho Recruit,25
 2025-09,trakstar_vn,3
 2025-09,Techmap,3
-2025-09,Zoho Recruit,25
-2025-09,LinkedIn,2529
-2025-09,CareerJet,397
-2025-10,Jora,600
-2025-10,Zoho Recruit,20
-2025-10,CareerJet,432
-2025-10,LinkedIn,2910
-2025-10,ashby_vn,4
-2025-10,workable_vn,3
-2025-10,recruitee_vn,4
-2025-10,breezy_vn,2
-2025-10,CareerBuilder,380
-2025-10,greenhouse_vn,7
-2025-10,Manatal,11
-2025-10,DEjobs,26
-2025-10,workday_vn,1
-2025-10,join_vn,5
-2025-10,trakstar_vn,12
-2025-10,Techmap,100
-2025-10,efinancialcareers_vn,1
-2025-10,personio_vn,2
-2025-10,Monster Asia,63
-2025-10,SmartRecruiters,55
+2025-09,greenhouse_vn,11
+2025-09,CareerBuilder,328
+2025-09,Manatal,8
+2025-09,workday_vn,1
+2025-09,DEjobs,30
+2025-09,efinancialcareers_vn,2
+2025-09,Monster Asia,67
+2025-09,SmartRecruiters,31
+2025-09,recruitee_vn,8
+2025-09,breezy_vn,2
+2025-09,workable_vn,1
+2025-09,Lever,8
+2025-09,Jora,1548
 2025-10,Lever,14
 2025-10,teamtailor_vn,24
+2025-10,SmartRecruiters,55
+2025-10,Monster Asia,63
+2025-10,Jora,600
+2025-10,breezy_vn,2
+2025-10,recruitee_vn,4
+2025-10,workable_vn,3
+2025-10,ashby_vn,4
+2025-10,join_vn,5
+2025-10,Techmap,100
+2025-10,trakstar_vn,12
+2025-10,efinancialcareers_vn,1
+2025-10,personio_vn,2
+2025-10,CareerJet,432
+2025-10,LinkedIn,2910
+2025-10,Zoho Recruit,20
+2025-10,workday_vn,1
+2025-10,greenhouse_vn,7
+2025-10,DEjobs,26
+2025-10,CareerBuilder,380
+2025-10,Manatal,11
+2025-11,Techmap,3
+2025-11,trakstar_vn,4
+2025-11,join_vn,2
+2025-11,CareerJet,89
+2025-11,LinkedIn,1460
+2025-11,Zoho Recruit,52
 2025-11,breezy_vn,3
-2025-11,recruitee_vn,2
 2025-11,workable_vn,4
+2025-11,recruitee_vn,2
 2025-11,ashby_vn,2
-2025-11,Monster Asia,39
-2025-11,SmartRecruiters,65
-2025-11,personio_vn,2
-2025-11,teamtailor_vn,11
 2025-11,Lever,13
+2025-11,teamtailor_vn,11
 2025-11,Manatal,20
 2025-11,greenhouse_vn,12
 2025-11,workday_vn,3
 2025-11,DEjobs,41
 2025-11,CareerBuilder,350
-2025-11,CareerJet,89
-2025-11,Zoho Recruit,52
-2025-11,LinkedIn,1460
-2025-11,Techmap,3
-2025-11,trakstar_vn,4
-2025-11,join_vn,2
-2025-12,workable_vn,7
-2025-12,recruitee_vn,10
-2025-12,breezy_vn,7
-2025-12,ashby_vn,3
-2025-12,CareerViet,91
-2025-12,SmartRecruiters,127
-2025-12,Monster Asia,106
-2025-12,Lever,13
-2025-12,teamtailor_vn,1
-2025-12,workday_vn,1
-2025-12,Manatal,18
-2025-12,greenhouse_vn,8
-2025-12,CareerBuilder,224
-2025-12,DEjobs,47
+2025-11,Monster Asia,39
+2025-11,SmartRecruiters,65
+2025-11,personio_vn,2
+2025-12,join_vn,2
+2025-12,trakstar_vn,7
+2025-12,Techmap,50
+2025-12,ycombinator_vn,1
 2025-12,Zoho Recruit,15
 2025-12,CareerJet,122
 2025-12,LinkedIn,736
-2025-12,join_vn,2
-2025-12,ycombinator_vn,1
-2025-12,Techmap,50
-2025-12,trakstar_vn,7
-2026-01,Monster Asia,76
+2025-12,breezy_vn,7
+2025-12,workable_vn,7
+2025-12,recruitee_vn,10
+2025-12,ashby_vn,3
+2025-12,teamtailor_vn,1
+2025-12,Lever,13
+2025-12,CareerBuilder,224
+2025-12,greenhouse_vn,8
+2025-12,Manatal,18
+2025-12,workday_vn,1
+2025-12,DEjobs,47
+2025-12,SmartRecruiters,127
+2025-12,CareerViet,91
+2025-12,Monster Asia,106
+2026-01,personio_vn,1
 2026-01,CareerViet,471
-2026-01,SmartRecruiters,95
+2026-01,Monster Asia,76
 2026-01,successfactors_vn,1
-2026-01,workable_vn,8
-2026-01,recruitee_vn,8
-2026-01,breezy_vn,2
-2026-01,ashby_vn,2
+2026-01,SmartRecruiters,95
 2026-01,LinkedIn,699
-2026-01,CareerJet,181
 2026-01,Zoho Recruit,17
-2026-01,Techmap,87
+2026-01,CareerJet,181
 2026-01,DEjobs,42
-2026-01,CareerBuilder,119
-2026-01,greenhouse_vn,10
 2026-01,Manatal,14
+2026-01,greenhouse_vn,10
+2026-01,CareerBuilder,119
 2026-01,Lever,84
 2026-01,teamtailor_vn,1
-2026-01,personio_vn,1
-2026-02,recruitee_vn,5
-2026-02,workable_vn,4
-2026-02,SmartRecruiters,64
-2026-02,Monster Asia,85
-2026-02,CareerViet,81
-2026-02,successfactors_vn,16
-2026-02,Lever,53
-2026-02,freshteam_vn,1
-2026-02,wttj_vn,1
-2026-02,greenhouse_vn,14
-2026-02,Manatal,4
-2026-02,DEjobs,35
-2026-02,CareerBuilder,130
-2026-02,comeet_vn,1
-2026-02,Zoho Recruit,11
-2026-02,CareerJet,139
-2026-02,LinkedIn,1244
+2026-01,breezy_vn,2
+2026-01,recruitee_vn,8
+2026-01,ashby_vn,2
+2026-01,workable_vn,8
+2026-01,Techmap,87
 2026-02,join_vn,3
 2026-02,trakstar_vn,1
+2026-02,Zoho Recruit,11
+2026-02,LinkedIn,1244
+2026-02,CareerJet,139
+2026-02,recruitee_vn,5
+2026-02,workable_vn,4
+2026-02,Lever,53
+2026-02,comeet_vn,1
+2026-02,freshteam_vn,1
+2026-02,wttj_vn,1
+2026-02,Manatal,4
+2026-02,DEjobs,35
+2026-02,greenhouse_vn,14
+2026-02,CareerBuilder,130
+2026-02,SmartRecruiters,64
+2026-02,Monster Asia,85
+2026-02,successfactors_vn,16
+2026-02,CareerViet,81
+2026-03,rippling_vn,1
+2026-03,Zoho Recruit,21
+2026-03,CareerJet,53
+2026-03,LinkedIn,2218
+2026-03,join_vn,2
+2026-03,ycombinator_vn,1
+2026-03,trakstar_vn,1
+2026-03,recruiterflow_vn,1
 2026-03,freshteam_vn,5
 2026-03,greenhouse_vn,28
 2026-03,comeet_vn,2
@@ -587,236 +595,228 @@ month,source,it_postings
 2026-03,workday_vn,2
 2026-03,Manatal,20
 2026-03,DEjobs,48
-2026-03,getro_vn,1
-2026-03,eightfold_vn,6
-2026-03,Lever,6
-2026-03,teamtailor_vn,3
 2026-03,jobvite_vn,1
 2026-03,personio_vn,3
-2026-03,brassring_vn,1
 2026-03,phenom_vn,6
 2026-03,SmartRecruiters,36
-2026-03,CareerViet,635
-2026-03,Monster Asia,115
 2026-03,successfactors_vn,25
-2026-03,workable_vn,3
+2026-03,Monster Asia,115
+2026-03,CareerViet,635
 2026-03,ashby_vn,1
 2026-03,breezy_vn,3
 2026-03,recruitee_vn,3
-2026-03,ycombinator_vn,1
-2026-03,join_vn,2
-2026-03,recruiterflow_vn,1
-2026-03,trakstar_vn,1
-2026-03,rippling_vn,1
-2026-03,Zoho Recruit,21
-2026-03,CareerJet,53
-2026-03,LinkedIn,2218
-2026-04,CareerJet,67
-2026-04,LinkedIn,955
-2026-04,Zoho Recruit,26
-2026-04,selectminds_vn,5
-2026-04,rippling_vn,1
-2026-04,pinpoint_vn,4
-2026-04,recruitee_vn,4
-2026-04,breezy_vn,5
-2026-04,Manatal,29
-2026-04,freshteam_vn,3
-2026-04,greenhouse_vn,29
-2026-04,DEjobs,59
-2026-04,Techmap,8
-2026-04,trakstar_vn,3
-2026-04,personio_vn,2
-2026-04,efinancialcareers_vn,1
-2026-04,phenom_vn,9
-2026-04,Monster Asia,269
-2026-04,CareerViet,760
-2026-04,successfactors_vn,12
-2026-04,SmartRecruiters,82
+2026-03,workable_vn,3
+2026-03,getro_vn,1
+2026-03,Lever,6
+2026-03,teamtailor_vn,3
+2026-03,eightfold_vn,6
+2026-03,brassring_vn,1
 2026-04,teamtailor_vn,5
 2026-04,getro_vn,1
-2026-04,Lever,10
 2026-04,eightfold_vn,18
-2026-05,LinkedIn,1845
-2026-05,rippling_vn,1
-2026-05,selectminds_vn,2
-2026-05,Zoho Recruit,11
-2026-05,oracle_vn,1
-2026-05,jazzhr_vn,1
-2026-05,workable_vn,2
-2026-05,breezy_vn,6
-2026-05,recruitee_vn,6
-2026-05,hrmdirect_vn,1
-2026-05,greenhouse_vn,10
-2026-05,comeet_vn,1
-2026-05,timesjobs_vn,3
-2026-05,freshteam_vn,1
-2026-05,workday_vn,7
-2026-05,Manatal,27
-2026-05,DEjobs,56
+2026-04,Lever,10
+2026-04,CareerViet,760
+2026-04,Monster Asia,269
+2026-04,successfactors_vn,12
+2026-04,SmartRecruiters,82
+2026-04,phenom_vn,9
+2026-04,recruitee_vn,4
+2026-04,breezy_vn,5
+2026-04,pinpoint_vn,4
+2026-04,Techmap,8
+2026-04,trakstar_vn,3
+2026-04,efinancialcareers_vn,1
+2026-04,personio_vn,2
+2026-04,LinkedIn,955
+2026-04,rippling_vn,1
+2026-04,CareerJet,67
+2026-04,Zoho Recruit,26
+2026-04,selectminds_vn,5
+2026-04,greenhouse_vn,29
+2026-04,freshteam_vn,3
+2026-04,DEjobs,59
+2026-04,Manatal,29
+2026-05,Lever,6
+2026-05,getro_vn,5
+2026-05,teamtailor_vn,4
+2026-05,eightfold_vn,1
+2026-05,SmartRecruiters,69
+2026-05,successfactors_vn,20
 2026-05,Monster Asia,486
 2026-05,CareerViet,680
-2026-05,successfactors_vn,20
-2026-05,SmartRecruiters,69
 2026-05,phenom_vn,6
-2026-05,eightfold_vn,1
-2026-05,getro_vn,5
-2026-05,Lever,6
-2026-05,teamtailor_vn,4
-2026-06,Monster Asia,288
+2026-05,workable_vn,2
+2026-05,breezy_vn,6
+2026-05,jazzhr_vn,1
+2026-05,recruitee_vn,6
+2026-05,oracle_vn,1
+2026-05,selectminds_vn,2
+2026-05,Zoho Recruit,11
+2026-05,LinkedIn,1845
+2026-05,rippling_vn,1
+2026-05,DEjobs,56
+2026-05,workday_vn,7
+2026-05,Manatal,27
+2026-05,freshteam_vn,1
+2026-05,hrmdirect_vn,1
+2026-05,comeet_vn,1
+2026-05,timesjobs_vn,3
+2026-05,greenhouse_vn,10
+2026-06,personio_vn,2
+2026-06,icims_vn,1
 2026-06,phenom_vn,4
-2026-06,SmartRecruiters,101
-2026-06,successfactors_vn,24
 2026-06,CareerViet,656
-2026-06,breezy_vn,3
-2026-06,jazzhr_vn,1
-2026-06,recruitee_vn,6
+2026-06,Monster Asia,288
+2026-06,successfactors_vn,24
+2026-06,SmartRecruiters,101
 2026-06,oracle_vn,1
 2026-06,selectminds_vn,1
 2026-06,rippling_vn,2
-2026-06,Zoho Recruit,22
 2026-06,LinkedIn,2507
-2026-06,Techmap,3
-2026-06,trakstar_vn,2
-2026-06,DEjobs,56
-2026-06,greenhouse_vn,14
+2026-06,Zoho Recruit,22
 2026-06,workday_vn,7
 2026-06,timesjobs_vn,7
+2026-06,CareerBuilder,284
+2026-06,greenhouse_vn,14
 2026-06,Manatal,27
 2026-06,comeet_vn,1
-2026-06,CareerBuilder,284
+2026-06,DEjobs,56
 2026-06,Lever,10
-2026-06,eightfold_vn,4
-2026-06,teamtailor_vn,12
 2026-06,getro_vn,8
-2026-06,icims_vn,1
-2026-06,personio_vn,2
-2026-07,teamtailor_vn,13
-2026-07,eightfold_vn,6
-2026-07,employmenthero_vn,1
+2026-06,teamtailor_vn,12
+2026-06,eightfold_vn,4
+2026-06,breezy_vn,3
+2026-06,recruitee_vn,6
+2026-06,jazzhr_vn,1
+2026-06,trakstar_vn,2
+2026-06,Techmap,3
+2026-07,icims_vn,2
 2026-07,getro_vn,6
+2026-07,employmenthero_vn,1
+2026-07,eightfold_vn,6
 2026-07,Lever,14
-2026-07,CareerBuilder,236
-2026-07,timesjobs_vn,12
-2026-07,workday_vn,5
-2026-07,DEjobs,56
-2026-07,Manatal,27
-2026-07,greenhouse_vn,32
+2026-07,teamtailor_vn,13
 2026-07,Techmap,4
+2026-07,ycombinator_vn,1
 2026-07,trakstar_vn,4
 2026-07,join_vn,1
-2026-07,ycombinator_vn,1
-2026-07,LinkedIn,2718
-2026-07,rippling_vn,8
-2026-07,oracle_vn,5
-2026-07,Zoho Recruit,32
-2026-07,ashby_vn,7
-2026-07,jobsacuk_vn,1
-2026-07,workable_vn,5
-2026-07,jazzhr_vn,6
-2026-07,pinpoint_vn,1
-2026-07,breezy_vn,3
 2026-07,recruitee_vn,5
-2026-07,CareerViet,701
+2026-07,pinpoint_vn,1
+2026-07,jazzhr_vn,6
+2026-07,workable_vn,5
+2026-07,jobsacuk_vn,1
+2026-07,ashby_vn,7
+2026-07,breezy_vn,3
 2026-07,Monster Asia,399
+2026-07,CareerViet,701
 2026-07,successfactors_vn,25
 2026-07,SmartRecruiters,111
 2026-07,paylocity_vn,3
-2026-07,phenom_vn,4
 2026-07,bamboohr_vn,1
-2026-07,icims_vn,2
-2026-08,jazzhr_vn,2
-2026-08,breezy_vn,1
-2026-08,CareerViet,287
-2026-08,Monster Asia,523
-2026-08,SmartRecruiters,106
-2026-08,bamboohr_vn,7
-2026-08,successfactors_vn,12
-2026-08,phenom_vn,3
-2026-08,eightfold_vn,4
-2026-08,Lever,12
-2026-08,teamtailor_vn,6
-2026-08,getro_vn,3
-2026-08,Manatal,14
-2026-08,DEjobs,43
-2026-08,CareerBuilder,169
-2026-08,greenhouse_vn,6
-2026-08,timesjobs_vn,5
-2026-08,freshteam_vn,1
+2026-07,phenom_vn,4
+2026-07,DEjobs,56
+2026-07,Manatal,27
+2026-07,CareerBuilder,236
+2026-07,timesjobs_vn,12
+2026-07,greenhouse_vn,32
+2026-07,workday_vn,5
+2026-07,rippling_vn,8
+2026-07,Zoho Recruit,32
+2026-07,oracle_vn,5
+2026-07,LinkedIn,2718
+2026-08,Techmap,3
+2026-08,join_vn,1
+2026-08,kula_vn,1
+2026-08,trakstar_vn,7
+2026-08,rippling_vn,1
+2026-08,LinkedIn,2971
 2026-08,Zoho Recruit,18
 2026-08,avature_vn,20
 2026-08,selectminds_vn,4
 2026-08,oracle_vn,1
-2026-08,rippling_vn,1
-2026-08,LinkedIn,2971
-2026-08,Techmap,3
-2026-08,trakstar_vn,7
-2026-08,join_vn,1
-2026-08,kula_vn,1
-2026-09,teamtailor_vn,5
+2026-08,jazzhr_vn,2
+2026-08,breezy_vn,1
+2026-08,eightfold_vn,4
+2026-08,getro_vn,3
+2026-08,teamtailor_vn,6
+2026-08,Lever,12
+2026-08,DEjobs,43
+2026-08,freshteam_vn,1
+2026-08,timesjobs_vn,5
+2026-08,greenhouse_vn,6
+2026-08,CareerBuilder,169
+2026-08,Manatal,14
+2026-08,Monster Asia,523
+2026-08,bamboohr_vn,7
+2026-08,phenom_vn,3
+2026-08,CareerViet,287
+2026-08,successfactors_vn,12
+2026-08,SmartRecruiters,106
+2026-09,pageup_vn,1
+2026-09,eightfold_vn,13
 2026-09,Lever,7
 2026-09,getro_vn,1
-2026-09,eightfold_vn,13
-2026-09,timesjobs_vn,4
-2026-09,greenhouse_vn,9
-2026-09,DEjobs,64
-2026-09,Manatal,16
-2026-09,comeet_vn,3
-2026-09,CareerBuilder,227
-2026-09,workday_vn,11
+2026-09,teamtailor_vn,5
 2026-09,recruiterflow_vn,1
 2026-09,trakstar_vn,3
-2026-09,Zoho Recruit,12
-2026-09,selectminds_vn,4
-2026-09,LinkedIn,3938
-2026-09,rippling_vn,4
+2026-09,workable_vn,1
+2026-09,ashby_vn,4
 2026-09,pinpoint_vn,2
-2026-09,jazzhr_vn,3
 2026-09,recruitee_vn,4
 2026-09,breezy_vn,2
+2026-09,jazzhr_vn,3
 2026-09,taleo_vn,1
-2026-09,ashby_vn,4
-2026-09,workable_vn,1
-2026-09,paylocity_vn,1
-2026-09,phenom_vn,4
-2026-09,SmartRecruiters,64
 2026-09,Monster Asia,450
+2026-09,SmartRecruiters,64
+2026-09,paylocity_vn,1
 2026-09,successfactors_vn,5
-2026-09,pageup_vn,1
+2026-09,phenom_vn,4
+2026-09,Manatal,16
+2026-09,timesjobs_vn,4
+2026-09,workday_vn,11
+2026-09,greenhouse_vn,9
+2026-09,comeet_vn,3
+2026-09,CareerBuilder,227
+2026-09,DEjobs,64
+2026-09,LinkedIn,3938
+2026-09,rippling_vn,4
+2026-09,Zoho Recruit,12
+2026-09,selectminds_vn,4
+2026-10,Zoho Recruit,20
+2026-10,hron_vn,6
+2026-10,avature_vn,1
+2026-10,LinkedIn,3750
+2026-10,oracle_vn,16
+2026-10,rippling_vn,1
+2026-10,selectminds_vn,3
+2026-10,Foundit,482
+2026-10,trakstar_vn,2
+2026-10,timesjobs_vn,11
+2026-10,Manatal,14
+2026-10,DEjobs,50
+2026-10,CareerBuilder,194
 2026-10,workday_vn,27
 2026-10,greenhouse_vn,7
-2026-10,CareerBuilder,194
-2026-10,DEjobs,50
-2026-10,Manatal,14
 2026-10,freshteam_vn,1
-2026-10,timesjobs_vn,11
+2026-10,jibeapply_vn,4
+2026-10,Monster Asia,381
+2026-10,dayforce_vn,1
+2026-10,CareerViet,919
+2026-10,SmartRecruiters,134
+2026-10,paylocity_vn,2
+2026-10,bamboohr_vn,6
+2026-10,phenom_vn,4
+2026-10,successfactors_vn,24
+2026-10,jazzhr_vn,3
+2026-10,workable_vn,16
+2026-10,recruitee_vn,6
+2026-10,ashby_vn,1
+2026-10,breezy_vn,2
 2026-10,eightfold_vn,6
 2026-10,vincere_vn,2
+2026-10,teamtailor_vn,5
 2026-10,employmenthero_vn,1
 2026-10,Lever,3
-2026-10,teamtailor_vn,5
-2026-10,jibeapply_vn,4
 2026-10,ultipro_vn,1
 2026-10,icims_vn,1
 2026-10,builtin_vn,28
-2026-10,SmartRecruiters,134
-2026-10,CareerViet,919
-2026-10,dayforce_vn,1
-2026-10,Monster Asia,381
-2026-10,paylocity_vn,2
-2026-10,successfactors_vn,24
-2026-10,phenom_vn,4
-2026-10,bamboohr_vn,6
-2026-10,breezy_vn,2
-2026-10,jazzhr_vn,3
-2026-10,workable_vn,16
-2026-10,ashby_vn,1
-2026-10,recruitee_vn,6
-2026-10,Foundit,482
-2026-10,trakstar_vn,2
-2026-10,LinkedIn,3750
-2026-10,rippling_vn,1
-2026-10,avature_vn,1
-2026-10,hron_vn,6
-2026-10,selectminds_vn,3
-2026-10,oracle_vn,16
-2026-10,Zoho Recruit,20

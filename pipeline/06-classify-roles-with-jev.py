@@ -11,9 +11,9 @@ by the same cleaned-title key (``analysis.load_features``); nothing else is writ
 SPENDING. About $0.000022 per distinct title. Nothing is sent unless you pass ``--yes``.
 Needs TYPESAFE_API_KEY in the environment or ``.env.local`` (git-ignored).
 
-    uv run python 06-classify-roles-with-jev.py --dry-run
-    uv run python 06-classify-roles-with-jev.py --limit 300 --yes     # pilot: 300 commonest titles
-    uv run python 06-classify-roles-with-jev.py --yes                 # every distinct title
+    uv run python pipeline/06-classify-roles-with-jev.py --dry-run
+    uv run python pipeline/06-classify-roles-with-jev.py --limit 300 --yes   # pilot
+    uv run python pipeline/06-classify-roles-with-jev.py --yes               # all titles
 """
 
 from __future__ import annotations
@@ -22,8 +22,8 @@ import argparse
 
 import duckdb
 
-import jev
-from common import FEATURES_DIR, ROLE_CACHE_PATH, clean_title_sql, connect
+from vnjobs import jev
+from vnjobs.common import FEATURES_DIR, ROLE_CACHE_PATH, clean_title_sql, connect
 
 DEFAULT_WORKERS = 64
 MIN_TITLE_LENGTH = 3

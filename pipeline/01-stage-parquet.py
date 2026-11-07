@@ -12,8 +12,8 @@ Reads ``data/job-dataset/techmap_jobs_vn_YYYY-MM-DD.jsonl`` (symlinked, 26 GB fo
   records which rows could have been flagged in the first place.
 * Skips months that are already staged, so a re-run only fills the gaps.
 
-    uv run python 01-stage-parquet.py                      # all years, 2020-01 to 2026-11
-    uv run python 01-stage-parquet.py --from 2024-01       # or a narrower window
+    uv run python pipeline/01-stage-parquet.py                      # all years, 2020-01 to 2026-11
+    uv run python pipeline/01-stage-parquet.py --from 2024-01       # or a narrower window
 """
 
 from __future__ import annotations
@@ -25,7 +25,7 @@ from pathlib import Path
 
 import duckdb
 
-from common import SOURCE_DIR, STAGING_DIR, connect
+from vnjobs.common import SOURCE_DIR, STAGING_DIR, connect
 
 # Explicit column types make DuckDB skip the raw html and return NULL for any key an
 # older file does not have, instead of failing on the schema drift.

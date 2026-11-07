@@ -12,8 +12,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-import analysis as a
-import taxonomy as tx
+from vnjobs import taxonomy as tx
+from vnjobs.analysis import core as a
 
 TOP_N = 25
 TOP_SHARE = 10

@@ -14,14 +14,14 @@ Postings with no company name are never marked: without a company the fingerprin
 just a title, which would delete real separate openings. Some repeats are genuinely
 separate openings with the same title, so the rate is an upper bound on true duplicates.
 
-    uv run python 03-fingerprint.py
+    uv run python pipeline/03-fingerprint.py
 """
 
 from __future__ import annotations
 
 import duckdb
 
-from common import DATA_DIR, DEDUP_DIR, FINGERPRINT_DIR, clean_title_sql, connect, month_of
+from vnjobs.common import DATA_DIR, DEDUP_DIR, FINGERPRINT_DIR, clean_title_sql, connect, month_of
 
 REPORT_PATH = DATA_DIR / "step-03-fp-report.csv"
 FLAG_ERA_START = "2025-05"  # first month in which Techmap's own duplicate flag exists

@@ -12,7 +12,7 @@ import matplotlib.pyplot as plt
 import pandas as pd
 from matplotlib.figure import Figure
 
-import analysis as a
+from vnjobs.analysis import core as a
 
 TOP_SOURCES = 6  # sources drawn on their own in the stacked chart; the rest become "Other"
 SHARE_SOURCES = ("careerbuilder_vn", "monsterasia_vn", "linkedin_vn", "jora_vn", "careerjet_vn")
@@ -200,4 +200,85 @@ def chart_careerbuilder(frame: pd.DataFrame) -> Figure:
     bottom.set_ylabel("IT share of postings (%)")
     ticks = [i for i, month in enumerate(frame.month) if month.endswith("-01")]
     bottom.set_xticks(ticks, [frame.month.iloc[i][:4] for i in ticks])
+    return fig
+
+
+SEASON_SOURCE = "careerbuilder_vn"
+SEASON_YEARS = (2021, 2025)  # full calendar years of CareerBuilder data
+MONTHS_IN_YEAR = 12
+
+
+def seasonality(con: duckdb.DuckDBPyConnection) -> pd.DataFrame:
+    """Average monthly index of CareerBuilder postings over the full years 2021 to 2025.
+
+    Each month's count is divided by that year's average month, so 1.0 is a normal month.
+
+    Args:
+        con: Connection from :func:`analysis.connect`.
+
+    Returns:
+        Columns ``month`` (1 to 12), ``all_index``, ``it_index`` (mean over years) and the
+        lowest and highest yearly ``it_min`` / ``it_max`` index.
+    """
+    first, last = SEASON_YEARS
+    monthly = a.query(
+        con,
+        f"""SELECT cast(substr(p.month, 1, 4) AS INT) AS year,
+               cast(substr(p.month, 6, 2) AS INT) AS month,
+               p.postings AS all_postings, coalesce(i.n, 0) AS it_postings
+        FROM all_postings p
+        LEFT JOIN (SELECT month, count(*) AS n FROM it WHERE source = '{SEASON_SOURCE}'
+                   GROUP BY month) i USING (month)
+        WHERE p.source = '{SEASON_SOURCE}'
+          AND cast(substr(p.month, 1, 4) AS INT) BETWEEN {first} AND {last}""",
+    )
+    full = monthly.groupby("year").month.transform("count") == MONTHS_IN_YEAR
+    monthly = monthly[full]
+    for column in ("all_postings", "it_postings"):
+        monthly[column.replace("postings", "index")] = monthly[column] / monthly.groupby("year")[
+            column
+        ].transform("mean")
+    grouped = monthly.groupby("month")
+    return (
+        pd.DataFrame(
+            {
+                "all_index": grouped.all_index.mean(),
+                "it_index": grouped.it_index.mean(),
+                "it_min": grouped.it_index.min(),
+                "it_max": grouped.it_index.max(),
+            }
+        )
+        .round(2)
+        .reset_index()
+    )
+
+
+def chart_seasonality(table: pd.DataFrame) -> Figure:
+    """Draw the monthly index with the range across years.
+
+    Args:
+        table: Output of :func:`seasonality`.
+
+    Returns:
+        The figure.
+    """
+    fig, ax = plt.subplots(figsize=(10, 4.6))
+    ax.fill_between(
+        table.month,
+        table.it_min,
+        table.it_max,
+        color=a.PALETTE["data"],
+        alpha=0.15,
+        label="IT, range over years",
+    )
+    ax.plot(table.month, table.it_index, marker="o", color=a.PALETTE["data"], label="IT postings")
+    ax.plot(
+        table.month, table.all_index, marker="o", color=a.PALETTE["chrome"], label="All postings"
+    )
+    ax.axhline(1, color=a.PALETTE["muted"], linewidth=1)
+    ax.set_xticks(range(1, 13))
+    ax.set_xlabel("Month")
+    ax.set_ylabel("Index (1.0 = average month of the year)")
+    ax.set_title("CareerBuilder seasonality, 2021 to 2025")
+    ax.legend()
     return fig

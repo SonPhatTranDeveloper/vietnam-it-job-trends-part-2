@@ -21,10 +21,9 @@ import pandas as pd
 from matplotlib.axes import Axes
 from matplotlib.figure import Figure
 
-from common import clean_title_sql
+from vnjobs.common import DATA_DIR, PROJECT_ROOT, ROLE_CACHE_PATH, clean_title_sql
 
-ROOT = Path(__file__).resolve().parent
-DATA_DIR = ROOT / "data"
+ROOT = PROJECT_ROOT
 TABLES_DIR = ROOT / "tables"
 CHARTS_DIR = ROOT / "charts"
 
@@ -36,7 +35,6 @@ QUARTER_FROM_YEAR = 2023  # earlier years are too thin to split into quarters
 MIN_PERIOD_POSTINGS = 400  # a period with fewer postings is left off a trend line
 MONTHS_PER_QUARTER = 3
 ROLE_CONFIDENCE = 0.6  # a Jev role label at or above this replaces the rule-based role
-ROLE_CACHE_PATH = DATA_DIR / "step-06-role-cache.jsonl"
 
 # Palette from part 1 (white ground), each AA on white and tested for colour-blind pairs.
 PALETTE = {

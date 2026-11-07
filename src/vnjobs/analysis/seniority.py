@@ -12,7 +12,7 @@ from __future__ import annotations
 import pandas as pd
 from matplotlib.figure import Figure
 
-import analysis as a
+from vnjobs.analysis import core as a
 
 FROM_MONTH = "2025-01"
 LEVEL_ORDER = ["intern", "junior", "mid", "mid_senior", "senior", "lead", "manager"]

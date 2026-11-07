@@ -20,6 +20,8 @@ from typing import Any
 
 from tqdm import tqdm
 
+from vnjobs.common import PROJECT_ROOT
+
 ENDPOINT = "https://api.typesafe.ai/v1/systemone"
 MODEL = "jev-latest"
 COST_PER_CALL = 0.000022  # dollars, from part 1's own estimate
@@ -41,7 +43,7 @@ def load_key() -> str:
     key = os.environ.get("TYPESAFE_API_KEY")
     if key:
         return key
-    env_file = Path(".env.local")
+    env_file = PROJECT_ROOT / ".env.local"
     if env_file.exists():
         for line in env_file.read_text(encoding="utf-8").splitlines():
             name, _, value = line.strip().partition("=")

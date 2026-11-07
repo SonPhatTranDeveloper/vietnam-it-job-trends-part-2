@@ -14,8 +14,8 @@ from __future__ import annotations
 
 import pandas as pd
 
-import analysis as a
-import taxonomy as tx
+from vnjobs import taxonomy as tx
+from vnjobs.analysis import core as a
 
 LLM_TECHS = [name for name, category in tx.TECH_CATEGORY.items() if category == "llm"]
 SCOPES = {"All sources": None, "CareerBuilder": "careerbuilder_vn", "LinkedIn": "linkedin_vn"}
