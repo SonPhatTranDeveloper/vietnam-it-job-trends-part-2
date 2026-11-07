@@ -15,6 +15,8 @@ TITLES_PATH = DATA_DIR / "step-04-titles.parquet"
 JEV_CACHE_PATH = DATA_DIR / "step-04-jev-cache.jsonl"
 IT_DIR = DATA_DIR / "step-04-it"
 AMBIGUOUS_DIR = DATA_DIR / "step-04-ambiguous"
+FEATURES_DIR = DATA_DIR / "step-05-features"
+ROLE_CACHE_PATH = DATA_DIR / "step-06-role-cache.jsonl"
 DUCKDB_TEMP_DIR = DATA_DIR / ".duckdb-tmp"  # spill space, kept inside the git-ignored data/
 
 # Strips "(...)" / "[...]" groups and a trailing " - <city>" from a title. The same

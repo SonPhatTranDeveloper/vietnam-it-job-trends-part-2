@@ -30,20 +30,11 @@ unless you pass ``--yes``. Needs TYPESAFE_API_KEY in the environment or in ``.en
 from __future__ import annotations
 
 import argparse
-import json
-import os
-import sys
-import threading
-import time
-import urllib.error
-import urllib.request
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any
 
 import duckdb
-from tqdm import tqdm
 
+import jev
 from common import (
     AMBIGUOUS_DIR,
     DATA_DIR,
@@ -56,17 +47,10 @@ from common import (
     month_of,
 )
 
-ENDPOINT = "https://api.typesafe.ai/v1/systemone"
-MODEL = "jev-latest"
 IT_CONFIDENCE = 0.6  # `tech` at or above this is IT; `non_tech` at or above is dropped
 DEFAULT_WORKERS = 64  # parallel requests; raise or lower with --workers
-COST_PER_CALL = 0.000022  # dollars, from part 1's own estimate
-MAX_ATTEMPTS = 5
-REQUEST_TIMEOUT_S = 60
 MIN_TITLE_LENGTH = 3
-RETRY_STATUS = {429, 500, 502, 503, 504}
 REPORT_PATH = DATA_DIR / "step-04-report.csv"
-CACHE_LOCK = threading.Lock()  # workers append to one file from many threads
 
 QUESTION = {
     "is_tech": {
@@ -88,133 +72,6 @@ QUESTION = {
         },
     }
 }
-
-
-# --- Jev API ---------------------------------------------------------------------------
-
-
-def load_key() -> str:
-    """Read the TypeSafe API key from the environment or ``.env.local``.
-
-    Returns:
-        The API key.
-
-    Raises:
-        SystemExit: If no key is configured.
-    """
-    key = os.environ.get("TYPESAFE_API_KEY")
-    if key:
-        return key
-    env_file = Path(".env.local")
-    if env_file.exists():
-        for line in env_file.read_text(encoding="utf-8").splitlines():
-            name, _, value = line.strip().partition("=")
-            if name == "TYPESAFE_API_KEY" and value:
-                return value
-    sys.exit("No TYPESAFE_API_KEY (environment or .env.local)")
-
-
-def request_once(body: bytes, key: str) -> dict[str, Any]:
-    """Send one request to Jev.
-
-    Args:
-        body: The JSON request body.
-        key: The API key.
-
-    Returns:
-        Jev's ``is_tech`` answer (``choice`` and ``confidence``).
-    """
-    headers = {"Authorization": f"Bearer {key}", "Content-Type": "application/json"}
-    request = urllib.request.Request(ENDPOINT, data=body, headers=headers)
-    with urllib.request.urlopen(request, timeout=REQUEST_TIMEOUT_S) as response:
-        return json.load(response)["answers"]["is_tech"]
-
-
-def is_retryable(error: Exception) -> bool:
-    """Say whether a failed request is worth retrying.
-
-    Args:
-        error: The exception raised by the request.
-
-    Returns:
-        True for network errors and for rate-limit / server-side HTTP statuses.
-    """
-    if isinstance(error, urllib.error.HTTPError):
-        return error.code in RETRY_STATUS
-    return isinstance(error, urllib.error.URLError)
-
-
-def ask_jev(title: str, key: str) -> dict[str, Any]:
-    """Ask Jev whether a title is a tech job, retrying with exponential backoff.
-
-    Args:
-        title: The cleaned job title (the only thing Jev sees).
-        key: The API key.
-
-    Returns:
-        Jev's ``is_tech`` answer.
-
-    Raises:
-        Exception: The last error, once it is not retryable or attempts run out.
-    """
-    body = json.dumps({"model": MODEL, "state": f"Title: {title}", "questions": QUESTION}).encode()
-    for attempt in range(MAX_ATTEMPTS):
-        try:
-            return request_once(body, key)
-        except (urllib.error.HTTPError, urllib.error.URLError) as error:
-            if not is_retryable(error) or attempt == MAX_ATTEMPTS - 1:
-                raise
-            time.sleep(2**attempt)  # 1s, 2s, 4s, 8s
-    raise RuntimeError("unreachable")  # pragma: no cover
-
-
-# --- the resumable cache ---------------------------------------------------------------
-
-
-def read_cache() -> dict[str, dict[str, Any]]:
-    """Load every answered title from the cache file.
-
-    Returns:
-        A mapping from lower-cased cleaned title to its cached answer.
-    """
-    cache: dict[str, dict[str, Any]] = {}
-    if not JEV_CACHE_PATH.exists():
-        return cache
-    for line in JEV_CACHE_PATH.read_text(encoding="utf-8").splitlines():
-        try:
-            record = json.loads(line)
-        except json.JSONDecodeError:
-            continue  # a line cut short by a kill; that title is simply asked again
-        cache[record["title_key"]] = record
-    return cache
-
-
-def append_cache(record: dict[str, Any]) -> None:
-    """Append one answer to the cache file, safely from many threads.
-
-    Args:
-        record: ``{title_key, title, label, conf}``.
-    """
-    with CACHE_LOCK, JEV_CACHE_PATH.open("a", encoding="utf-8") as handle:
-        handle.write(json.dumps(record, ensure_ascii=False) + "\n")
-
-
-def classify_title(item: tuple[str, str], key: str) -> None:
-    """Ask Jev about one title and cache the answer; failures are logged, not cached.
-
-    Args:
-        item: ``(title_key, title)``.
-        key: The API key.
-    """
-    title_key, title = item
-    try:
-        answer = ask_jev(title, key)
-    except Exception as error:
-        print(f"\nfailed: {title!r}: {error}", file=sys.stderr)
-        return
-    label = answer.get("choice")
-    confidence = float(answer.get("confidence") or 0)
-    append_cache({"title_key": title_key, "title": title, "label": label, "conf": confidence})
 
 
 # --- titles to ask about ---------------------------------------------------------------
@@ -249,28 +106,12 @@ def pending_titles(
     Returns:
         ``(titles_to_ask, total_distinct_titles, already_cached)``.
     """
-    cache = read_cache()
+    cache = jev.read_cache(JEV_CACHE_PATH)
     rows = con.execute(
         f"SELECT title_key, title FROM read_parquet('{TITLES_PATH}') ORDER BY postings DESC"
     ).fetchall()
     todo = [(key, title) for key, title in rows if key not in cache]
     return (todo[:limit] if limit else todo), len(rows), len(cache)
-
-
-def run_calls(todo: list[tuple[str, str]], key: str, workers: int) -> None:
-    """Classify every pending title in parallel, with a progress bar.
-
-    Args:
-        todo: ``(title_key, title)`` pairs to ask Jev about.
-        key: The API key.
-        workers: How many requests to run in parallel.
-    """
-    JEV_CACHE_PATH.parent.mkdir(parents=True, exist_ok=True)
-    started = time.time()
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        list(tqdm(pool.map(lambda item: classify_title(item, key), todo), total=len(todo)))
-    elapsed = time.time() - started
-    print(f"{len(todo)} calls in {elapsed:.0f}s ({len(todo) / elapsed:.1f}/s)")
 
 
 # --- outputs ---------------------------------------------------------------------------
@@ -285,7 +126,7 @@ def load_cache_table(con: duckdb.DuckDBPyConnection) -> None:
     con.execute(
         "CREATE OR REPLACE TABLE jev(title_key VARCHAR, jev_label VARCHAR, jev_conf DOUBLE)"
     )
-    rows = [(k, v["label"], v["conf"]) for k, v in read_cache().items()]
+    rows = [(k, v["label"], v["conf"]) for k, v in jev.read_cache(JEV_CACHE_PATH).items()]
     con.executemany("INSERT INTO jev VALUES (?, ?, ?)", rows)
 
 
@@ -369,14 +210,14 @@ def main() -> None:
         return
     build_titles(con)
     todo, total, cached = pending_titles(con, args.limit)
-    cost = len(todo) * COST_PER_CALL
+    cost = len(todo) * jev.COST_PER_CALL
     print(f"{total} distinct titles, {cached} already answered, {len(todo)} to ask; ~${cost:.2f}")
     if not todo:
         write_outputs(con)  # everything is cached: just rebuild the outputs
     elif not args.yes or args.dry_run:
         print("dry run: nothing sent (pass --yes to spend)")
     else:
-        run_calls(todo, load_key(), args.workers)
+        jev.run_calls(todo, QUESTION, "is_tech", JEV_CACHE_PATH, args.workers)
         write_outputs(con)
 
 
