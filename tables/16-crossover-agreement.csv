@@ -1,0 +1,9 @@
+pair,linkedin,monster_asia,all_sources,holds_in_both_controls
+Python > Java,2024-Q3,2024-Q1,2024-Q4,True
+Python > JavaScript,2024-Q2,2024-Q1,2024-Q3,True
+Docker > JavaScript,2025-Q3,2026-Q2,2025-Q3,False
+Docker > React,2025-Q3,2026-Q2,2025-Q2,False
+CI/CD > JavaScript,2025-Q3,2026-Q2,2025-Q3,False
+AWS > Java,2024-Q3,2026-Q2,2025-Q3,False
+Kubernetes > React,2026-Q2,2026-Q2,2026-Q2,True
+Machine Learning > React,never ahead,2025-Q4,2026-Q3,False

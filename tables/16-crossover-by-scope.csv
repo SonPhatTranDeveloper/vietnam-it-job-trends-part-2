@@ -1,0 +1,25 @@
+pair,scope,status,period
+Python > Java,All sources,crosses,2024-Q4
+Python > Java,LinkedIn,crosses,2024-Q3
+Python > Java,Monster Asia,crosses,2024-Q1
+Python > JavaScript,All sources,crosses,2024-Q3
+Python > JavaScript,LinkedIn,crosses,2024-Q2
+Python > JavaScript,Monster Asia,crosses,2024-Q1
+Docker > JavaScript,All sources,crosses,2025-Q3
+Docker > JavaScript,LinkedIn,crosses,2025-Q3
+Docker > JavaScript,Monster Asia,crosses,2026-Q2
+Docker > React,All sources,crosses,2025-Q2
+Docker > React,LinkedIn,crosses,2025-Q3
+Docker > React,Monster Asia,crosses,2026-Q2
+CI/CD > JavaScript,All sources,crosses,2025-Q3
+CI/CD > JavaScript,LinkedIn,crosses,2025-Q3
+CI/CD > JavaScript,Monster Asia,crosses,2026-Q2
+AWS > Java,All sources,crosses,2025-Q3
+AWS > Java,LinkedIn,crosses,2024-Q3
+AWS > Java,Monster Asia,crosses,2026-Q2
+Kubernetes > React,All sources,crosses,2026-Q2
+Kubernetes > React,LinkedIn,crosses,2026-Q2
+Kubernetes > React,Monster Asia,crosses,2026-Q2
+Machine Learning > React,All sources,crosses,2026-Q3
+Machine Learning > React,LinkedIn,never ahead,
+Machine Learning > React,Monster Asia,crosses,2025-Q4

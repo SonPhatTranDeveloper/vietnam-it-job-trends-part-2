@@ -55,7 +55,8 @@ is committed.
 Notebooks live in `notebooks/`, one per theme (`01-market-volume`, `02-technology-trends`,
 `03-roles`, `04-seniority`, `05-companies`, `06-ai-and-llm`, `07-work-mode`, `08-salary`,
 `09-data-and-ai-jobs`, `10-language-requirements`, `11-entry-level-reality`, `12-industries`,
-`13-persistent-vacancies`, `14-benefits`, `15-part-1-reconciliation`).
+`13-persistent-vacancies`, `14-benefits`, `15-part-1-reconciliation`,
+`16-technology-crossovers`, `17-top-employers-by-year`, `18-skill-inflation`).
 Every definition (what counts as a technology, role, level or salary) lives in
 `src/vnjobs/taxonomy.py`. A control-source check goes beside every trend, and a source whose
 descriptions change length is not a control for description-based counts (CareerBuilder in 2025).

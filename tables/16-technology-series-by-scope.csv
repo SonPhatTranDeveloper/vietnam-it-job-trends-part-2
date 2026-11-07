@@ -1,0 +1,406 @@
+period,n,hits,share,scope,tech
+2020,3043,438,14.39,All sources,Python
+2021,5296,531,10.03,All sources,Python
+2022,3126,273,8.73,All sources,Python
+2023-Q1,4159,587,14.11,All sources,Python
+2023-Q2,2020,417,20.64,All sources,Python
+2023-Q3,1967,460,23.39,All sources,Python
+2023-Q4,4335,812,18.73,All sources,Python
+2024-Q1,3738,818,21.88,All sources,Python
+2024-Q2,4066,785,19.31,All sources,Python
+2024-Q3,5076,1236,24.35,All sources,Python
+2024-Q4,2525,804,31.84,All sources,Python
+2025-Q1,3415,917,26.85,All sources,Python
+2025-Q2,2904,794,27.34,All sources,Python
+2025-Q3,8489,2973,35.02,All sources,Python
+2025-Q4,6552,2587,39.48,All sources,Python
+2026-Q1,5459,2272,41.62,All sources,Python
+2026-Q2,7143,2993,41.9,All sources,Python
+2026-Q3,10544,4325,41.02,All sources,Python
+2020,3043,688,22.61,All sources,Java
+2021,5296,925,17.47,All sources,Java
+2022,3126,498,15.93,All sources,Java
+2023-Q1,4159,902,21.69,All sources,Java
+2023-Q2,2020,537,26.58,All sources,Java
+2023-Q3,1967,529,26.89,All sources,Java
+2023-Q4,4335,931,21.48,All sources,Java
+2024-Q1,3738,869,23.25,All sources,Java
+2024-Q2,4066,849,20.88,All sources,Java
+2024-Q3,5076,1264,24.9,All sources,Java
+2024-Q4,2525,605,23.96,All sources,Java
+2025-Q1,3415,750,21.96,All sources,Java
+2025-Q2,2904,605,20.83,All sources,Java
+2025-Q3,8489,1968,23.18,All sources,Java
+2025-Q4,6552,1448,22.1,All sources,Java
+2026-Q1,5459,1090,19.97,All sources,Java
+2026-Q2,7143,1376,19.26,All sources,Java
+2026-Q3,10544,2088,19.8,All sources,Java
+2020,3043,575,18.9,All sources,JavaScript
+2021,5296,677,12.78,All sources,JavaScript
+2022,3126,234,7.49,All sources,JavaScript
+2023-Q1,4159,816,19.62,All sources,JavaScript
+2023-Q2,2020,416,20.59,All sources,JavaScript
+2023-Q3,1967,435,22.11,All sources,JavaScript
+2023-Q4,4335,859,19.82,All sources,JavaScript
+2024-Q1,3738,703,18.81,All sources,JavaScript
+2024-Q2,4066,716,17.61,All sources,JavaScript
+2024-Q3,5076,967,19.05,All sources,JavaScript
+2024-Q4,2525,484,19.17,All sources,JavaScript
+2025-Q1,3415,651,19.06,All sources,JavaScript
+2025-Q2,2904,462,15.91,All sources,JavaScript
+2025-Q3,8489,1493,17.59,All sources,JavaScript
+2025-Q4,6552,1168,17.83,All sources,JavaScript
+2026-Q1,5459,893,16.36,All sources,JavaScript
+2026-Q2,7143,949,13.29,All sources,JavaScript
+2026-Q3,10544,1305,12.38,All sources,JavaScript
+2020,3043,126,4.14,All sources,Docker
+2021,5296,191,3.61,All sources,Docker
+2022,3126,81,2.59,All sources,Docker
+2023-Q1,4159,321,7.72,All sources,Docker
+2023-Q2,2020,214,10.59,All sources,Docker
+2023-Q3,1967,242,12.3,All sources,Docker
+2023-Q4,4335,428,9.87,All sources,Docker
+2024-Q1,3738,407,10.89,All sources,Docker
+2024-Q2,4066,394,9.69,All sources,Docker
+2024-Q3,5076,633,12.47,All sources,Docker
+2024-Q4,2525,326,12.91,All sources,Docker
+2025-Q1,3415,461,13.5,All sources,Docker
+2025-Q2,2904,418,14.39,All sources,Docker
+2025-Q3,8489,1743,20.53,All sources,Docker
+2025-Q4,6552,1443,22.02,All sources,Docker
+2026-Q1,5459,1087,19.91,All sources,Docker
+2026-Q2,7143,1534,21.48,All sources,Docker
+2026-Q3,10544,2205,20.91,All sources,Docker
+2020,3043,341,11.21,All sources,React
+2021,5296,556,10.5,All sources,React
+2022,3126,256,8.19,All sources,React
+2023-Q1,4159,548,13.18,All sources,React
+2023-Q2,2020,273,13.51,All sources,React
+2023-Q3,1967,363,18.45,All sources,React
+2023-Q4,4335,614,14.16,All sources,React
+2024-Q1,3738,499,13.35,All sources,React
+2024-Q2,4066,465,11.44,All sources,React
+2024-Q3,5076,763,15.03,All sources,React
+2024-Q4,2525,345,13.66,All sources,React
+2025-Q1,3415,492,14.41,All sources,React
+2025-Q2,2904,335,11.54,All sources,React
+2025-Q3,8489,1408,16.59,All sources,React
+2025-Q4,6552,1079,16.47,All sources,React
+2026-Q1,5459,841,15.41,All sources,React
+2026-Q2,7143,931,13.03,All sources,React
+2026-Q3,10544,1252,11.87,All sources,React
+2020,3043,93,3.06,All sources,CI/CD
+2021,5296,250,4.72,All sources,CI/CD
+2022,3126,166,5.31,All sources,CI/CD
+2023-Q1,4159,385,9.26,All sources,CI/CD
+2023-Q2,2020,282,13.96,All sources,CI/CD
+2023-Q3,1967,335,17.03,All sources,CI/CD
+2023-Q4,4335,515,11.88,All sources,CI/CD
+2024-Q1,3738,450,12.04,All sources,CI/CD
+2024-Q2,4066,450,11.07,All sources,CI/CD
+2024-Q3,5076,893,17.59,All sources,CI/CD
+2024-Q4,2525,467,18.5,All sources,CI/CD
+2025-Q1,3415,567,16.6,All sources,CI/CD
+2025-Q2,2904,491,16.91,All sources,CI/CD
+2025-Q3,8489,2266,26.69,All sources,CI/CD
+2025-Q4,6552,2015,30.75,All sources,CI/CD
+2026-Q1,5459,1568,28.72,All sources,CI/CD
+2026-Q2,7143,2245,31.43,All sources,CI/CD
+2026-Q3,10544,3313,31.42,All sources,CI/CD
+2020,3043,216,7.1,All sources,AWS
+2021,5296,413,7.8,All sources,AWS
+2022,3126,210,6.72,All sources,AWS
+2023-Q1,4159,496,11.93,All sources,AWS
+2023-Q2,2020,339,16.78,All sources,AWS
+2023-Q3,1967,439,22.32,All sources,AWS
+2023-Q4,4335,800,18.45,All sources,AWS
+2024-Q1,3738,623,16.67,All sources,AWS
+2024-Q2,4066,652,16.04,All sources,AWS
+2024-Q3,5076,1148,22.62,All sources,AWS
+2024-Q4,2525,627,24.83,All sources,AWS
+2025-Q1,3415,752,22.02,All sources,AWS
+2025-Q2,2904,571,19.66,All sources,AWS
+2025-Q3,8489,2453,28.9,All sources,AWS
+2025-Q4,6552,1965,29.99,All sources,AWS
+2026-Q1,5459,1578,28.91,All sources,AWS
+2026-Q2,7143,2078,29.09,All sources,AWS
+2026-Q3,10544,2957,28.04,All sources,AWS
+2020,3043,74,2.43,All sources,Kubernetes
+2021,5296,125,2.36,All sources,Kubernetes
+2022,3126,85,2.72,All sources,Kubernetes
+2023-Q1,4159,247,5.94,All sources,Kubernetes
+2023-Q2,2020,197,9.75,All sources,Kubernetes
+2023-Q3,1967,228,11.59,All sources,Kubernetes
+2023-Q4,4335,388,8.95,All sources,Kubernetes
+2024-Q1,3738,375,10.03,All sources,Kubernetes
+2024-Q2,4066,328,8.07,All sources,Kubernetes
+2024-Q3,5076,594,11.7,All sources,Kubernetes
+2024-Q4,2525,320,12.67,All sources,Kubernetes
+2025-Q1,3415,381,11.16,All sources,Kubernetes
+2025-Q2,2904,340,11.71,All sources,Kubernetes
+2025-Q3,8489,1437,16.93,All sources,Kubernetes
+2025-Q4,6552,1191,18.18,All sources,Kubernetes
+2026-Q1,5459,838,15.35,All sources,Kubernetes
+2026-Q2,7143,1318,18.45,All sources,Kubernetes
+2026-Q3,10544,2031,19.26,All sources,Kubernetes
+2020,3043,233,7.66,All sources,Machine Learning
+2021,5296,286,5.4,All sources,Machine Learning
+2022,3126,109,3.49,All sources,Machine Learning
+2023-Q1,4159,397,9.55,All sources,Machine Learning
+2023-Q2,2020,135,6.68,All sources,Machine Learning
+2023-Q3,1967,150,7.63,All sources,Machine Learning
+2023-Q4,4335,442,10.2,All sources,Machine Learning
+2024-Q1,3738,445,11.9,All sources,Machine Learning
+2024-Q2,4066,531,13.06,All sources,Machine Learning
+2024-Q3,5076,481,9.48,All sources,Machine Learning
+2024-Q4,2525,330,13.07,All sources,Machine Learning
+2025-Q1,3415,457,13.38,All sources,Machine Learning
+2025-Q2,2904,504,17.36,All sources,Machine Learning
+2025-Q3,8489,1458,17.18,All sources,Machine Learning
+2025-Q4,6552,1120,17.09,All sources,Machine Learning
+2026-Q1,5459,861,15.77,All sources,Machine Learning
+2026-Q2,7143,1064,14.9,All sources,Machine Learning
+2026-Q3,10544,1551,14.71,All sources,Machine Learning
+2023-Q1,476,107,22.48,LinkedIn,Python
+2023-Q2,846,235,27.78,LinkedIn,Python
+2023-Q3,757,215,28.4,LinkedIn,Python
+2023-Q4,597,164,27.47,LinkedIn,Python
+2024-Q1,229,58,25.33,LinkedIn,Python
+2024-Q2,501,144,28.74,LinkedIn,Python
+2024-Q3,448,115,25.67,LinkedIn,Python
+2024-Q4,268,124,46.27,LinkedIn,Python
+2025-Q1,183,71,38.8,LinkedIn,Python
+2025-Q3,4190,1707,40.74,LinkedIn,Python
+2025-Q4,4558,1896,41.6,LinkedIn,Python
+2026-Q1,3700,1632,44.11,LinkedIn,Python
+2026-Q2,4709,2131,45.25,LinkedIn,Python
+2026-Q3,8164,3392,41.55,LinkedIn,Python
+2023-Q1,476,139,29.2,LinkedIn,Java
+2023-Q2,846,251,29.67,LinkedIn,Java
+2023-Q3,757,212,28.01,LinkedIn,Java
+2023-Q4,597,153,25.63,LinkedIn,Java
+2024-Q1,229,52,22.71,LinkedIn,Java
+2024-Q2,501,134,26.75,LinkedIn,Java
+2024-Q3,448,105,23.44,LinkedIn,Java
+2024-Q4,268,65,24.25,LinkedIn,Java
+2025-Q1,183,34,18.58,LinkedIn,Java
+2025-Q3,4190,1054,25.16,LinkedIn,Java
+2025-Q4,4558,1004,22.03,LinkedIn,Java
+2026-Q1,3700,763,20.62,LinkedIn,Java
+2026-Q2,4709,977,20.75,LinkedIn,Java
+2026-Q3,8164,1727,21.15,LinkedIn,Java
+2023-Q1,476,122,25.63,LinkedIn,JavaScript
+2023-Q2,846,212,25.06,LinkedIn,JavaScript
+2023-Q3,757,218,28.8,LinkedIn,JavaScript
+2023-Q4,597,144,24.12,LinkedIn,JavaScript
+2024-Q1,229,68,29.69,LinkedIn,JavaScript
+2024-Q2,501,98,19.56,LinkedIn,JavaScript
+2024-Q3,448,87,19.42,LinkedIn,JavaScript
+2024-Q4,268,52,19.4,LinkedIn,JavaScript
+2025-Q1,183,38,20.77,LinkedIn,JavaScript
+2025-Q3,4190,804,19.19,LinkedIn,JavaScript
+2025-Q4,4558,817,17.92,LinkedIn,JavaScript
+2026-Q1,3700,615,16.62,LinkedIn,JavaScript
+2026-Q2,4709,691,14.67,LinkedIn,JavaScript
+2026-Q3,8164,1098,13.45,LinkedIn,JavaScript
+2023-Q1,476,63,13.24,LinkedIn,Docker
+2023-Q2,846,113,13.36,LinkedIn,Docker
+2023-Q3,757,119,15.72,LinkedIn,Docker
+2023-Q4,597,104,17.42,LinkedIn,Docker
+2024-Q1,229,36,15.72,LinkedIn,Docker
+2024-Q2,501,71,14.17,LinkedIn,Docker
+2024-Q3,448,67,14.96,LinkedIn,Docker
+2024-Q4,268,56,20.9,LinkedIn,Docker
+2025-Q1,183,26,14.21,LinkedIn,Docker
+2025-Q3,4190,1086,25.92,LinkedIn,Docker
+2025-Q4,4558,1179,25.87,LinkedIn,Docker
+2026-Q1,3700,853,23.05,LinkedIn,Docker
+2026-Q2,4709,1168,24.8,LinkedIn,Docker
+2026-Q3,8164,1855,22.72,LinkedIn,Docker
+2023-Q1,476,104,21.85,LinkedIn,React
+2023-Q2,846,135,15.96,LinkedIn,React
+2023-Q3,757,177,23.38,LinkedIn,React
+2023-Q4,597,127,21.27,LinkedIn,React
+2024-Q1,229,62,27.07,LinkedIn,React
+2024-Q2,501,81,16.17,LinkedIn,React
+2024-Q3,448,67,14.96,LinkedIn,React
+2024-Q4,268,56,20.9,LinkedIn,React
+2025-Q1,183,30,16.39,LinkedIn,React
+2025-Q3,4190,831,19.83,LinkedIn,React
+2025-Q4,4558,817,17.92,LinkedIn,React
+2026-Q1,3700,648,17.51,LinkedIn,React
+2026-Q2,4709,726,15.42,LinkedIn,React
+2026-Q3,8164,1086,13.3,LinkedIn,React
+2023-Q1,476,109,22.9,LinkedIn,CI/CD
+2023-Q2,846,151,17.85,LinkedIn,CI/CD
+2023-Q3,757,165,21.8,LinkedIn,CI/CD
+2023-Q4,597,137,22.95,LinkedIn,CI/CD
+2024-Q1,229,61,26.64,LinkedIn,CI/CD
+2024-Q2,501,111,22.16,LinkedIn,CI/CD
+2024-Q3,448,82,18.3,LinkedIn,CI/CD
+2024-Q4,268,67,25.0,LinkedIn,CI/CD
+2025-Q1,183,40,21.86,LinkedIn,CI/CD
+2025-Q3,4190,1413,33.72,LinkedIn,CI/CD
+2025-Q4,4558,1588,34.84,LinkedIn,CI/CD
+2026-Q1,3700,1200,32.43,LinkedIn,CI/CD
+2026-Q2,4709,1667,35.4,LinkedIn,CI/CD
+2026-Q3,8164,2730,33.44,LinkedIn,CI/CD
+2023-Q1,476,125,26.26,LinkedIn,AWS
+2023-Q2,846,195,23.05,LinkedIn,AWS
+2023-Q3,757,225,29.72,LinkedIn,AWS
+2023-Q4,597,191,31.99,LinkedIn,AWS
+2024-Q1,229,81,35.37,LinkedIn,AWS
+2024-Q2,501,135,26.95,LinkedIn,AWS
+2024-Q3,448,115,25.67,LinkedIn,AWS
+2024-Q4,268,100,37.31,LinkedIn,AWS
+2025-Q1,183,67,36.61,LinkedIn,AWS
+2025-Q3,4190,1498,35.75,LinkedIn,AWS
+2025-Q4,4558,1543,33.85,LinkedIn,AWS
+2026-Q1,3700,1209,32.68,LinkedIn,AWS
+2026-Q2,4709,1577,33.49,LinkedIn,AWS
+2026-Q3,8164,2497,30.59,LinkedIn,AWS
+2023-Q1,476,68,14.29,LinkedIn,Kubernetes
+2023-Q2,846,112,13.24,LinkedIn,Kubernetes
+2023-Q3,757,128,16.91,LinkedIn,Kubernetes
+2023-Q4,597,125,20.94,LinkedIn,Kubernetes
+2024-Q1,229,43,18.78,LinkedIn,Kubernetes
+2024-Q2,501,71,14.17,LinkedIn,Kubernetes
+2024-Q3,448,62,13.84,LinkedIn,Kubernetes
+2024-Q4,268,59,22.01,LinkedIn,Kubernetes
+2025-Q1,183,26,14.21,LinkedIn,Kubernetes
+2025-Q3,4190,942,22.48,LinkedIn,Kubernetes
+2025-Q4,4558,968,21.24,LinkedIn,Kubernetes
+2026-Q1,3700,645,17.43,LinkedIn,Kubernetes
+2026-Q2,4709,1004,21.32,LinkedIn,Kubernetes
+2026-Q3,8164,1705,20.88,LinkedIn,Kubernetes
+2023-Q1,476,39,8.19,LinkedIn,Machine Learning
+2023-Q2,846,70,8.27,LinkedIn,Machine Learning
+2023-Q3,757,58,7.66,LinkedIn,Machine Learning
+2023-Q4,597,45,7.54,LinkedIn,Machine Learning
+2024-Q1,229,20,8.73,LinkedIn,Machine Learning
+2024-Q2,501,37,7.39,LinkedIn,Machine Learning
+2024-Q3,448,34,7.59,LinkedIn,Machine Learning
+2024-Q4,268,64,23.88,LinkedIn,Machine Learning
+2025-Q1,183,20,10.93,LinkedIn,Machine Learning
+2025-Q3,4190,632,15.08,LinkedIn,Machine Learning
+2025-Q4,4558,796,17.46,LinkedIn,Machine Learning
+2026-Q1,3700,618,16.7,LinkedIn,Machine Learning
+2026-Q2,4709,746,15.84,LinkedIn,Machine Learning
+2026-Q3,8164,1215,14.88,LinkedIn,Machine Learning
+2020,201,38,18.91,Monster Asia,Python
+2021,392,86,21.94,Monster Asia,Python
+2022,508,126,24.8,Monster Asia,Python
+2023-Q3,188,56,29.79,Monster Asia,Python
+2023-Q4,543,122,22.47,Monster Asia,Python
+2024-Q1,325,147,45.23,Monster Asia,Python
+2024-Q2,132,47,35.61,Monster Asia,Python
+2024-Q3,850,222,26.12,Monster Asia,Python
+2025-Q3,206,57,27.67,Monster Asia,Python
+2025-Q4,158,92,58.23,Monster Asia,Python
+2026-Q1,221,119,53.85,Monster Asia,Python
+2026-Q2,745,310,41.61,Monster Asia,Python
+2026-Q3,997,429,43.03,Monster Asia,Python
+2020,201,84,41.79,Monster Asia,Java
+2021,392,135,34.44,Monster Asia,Java
+2022,508,144,28.35,Monster Asia,Java
+2023-Q3,188,53,28.19,Monster Asia,Java
+2023-Q4,543,130,23.94,Monster Asia,Java
+2024-Q1,325,73,22.46,Monster Asia,Java
+2024-Q2,132,27,20.45,Monster Asia,Java
+2024-Q3,850,201,23.65,Monster Asia,Java
+2025-Q3,206,34,16.5,Monster Asia,Java
+2025-Q4,158,33,20.89,Monster Asia,Java
+2026-Q1,221,45,20.36,Monster Asia,Java
+2026-Q2,745,119,15.97,Monster Asia,Java
+2026-Q3,997,160,16.05,Monster Asia,Java
+2020,201,25,12.44,Monster Asia,JavaScript
+2021,392,45,11.48,Monster Asia,JavaScript
+2022,508,91,17.91,Monster Asia,JavaScript
+2023-Q3,188,45,23.94,Monster Asia,JavaScript
+2023-Q4,543,125,23.02,Monster Asia,JavaScript
+2024-Q1,325,53,16.31,Monster Asia,JavaScript
+2024-Q2,132,33,25.0,Monster Asia,JavaScript
+2024-Q3,850,171,20.12,Monster Asia,JavaScript
+2025-Q3,206,26,12.62,Monster Asia,JavaScript
+2025-Q4,158,16,10.13,Monster Asia,JavaScript
+2026-Q1,221,28,12.67,Monster Asia,JavaScript
+2026-Q2,745,58,7.79,Monster Asia,JavaScript
+2026-Q3,997,91,9.13,Monster Asia,JavaScript
+2020,201,9,4.48,Monster Asia,Docker
+2021,392,31,7.91,Monster Asia,Docker
+2022,508,34,6.69,Monster Asia,Docker
+2023-Q3,188,28,14.89,Monster Asia,Docker
+2023-Q4,543,99,18.23,Monster Asia,Docker
+2024-Q1,325,32,9.85,Monster Asia,Docker
+2024-Q2,132,16,12.12,Monster Asia,Docker
+2024-Q3,850,123,14.47,Monster Asia,Docker
+2025-Q3,206,18,8.74,Monster Asia,Docker
+2025-Q4,158,4,2.53,Monster Asia,Docker
+2026-Q1,221,11,4.98,Monster Asia,Docker
+2026-Q2,745,128,17.18,Monster Asia,Docker
+2026-Q3,997,160,16.05,Monster Asia,Docker
+2020,201,16,7.96,Monster Asia,React
+2021,392,54,13.78,Monster Asia,React
+2022,508,61,12.01,Monster Asia,React
+2023-Q3,188,41,21.81,Monster Asia,React
+2023-Q4,543,114,20.99,Monster Asia,React
+2024-Q1,325,44,13.54,Monster Asia,React
+2024-Q2,132,26,19.7,Monster Asia,React
+2024-Q3,850,145,17.06,Monster Asia,React
+2025-Q3,206,24,11.65,Monster Asia,React
+2025-Q4,158,10,6.33,Monster Asia,React
+2026-Q1,221,20,9.05,Monster Asia,React
+2026-Q2,745,48,6.44,Monster Asia,React
+2026-Q3,997,70,7.02,Monster Asia,React
+2020,201,7,3.48,Monster Asia,CI/CD
+2021,392,30,7.65,Monster Asia,CI/CD
+2022,508,37,7.28,Monster Asia,CI/CD
+2023-Q3,188,31,16.49,Monster Asia,CI/CD
+2023-Q4,543,101,18.6,Monster Asia,CI/CD
+2024-Q1,325,20,6.15,Monster Asia,CI/CD
+2024-Q2,132,24,18.18,Monster Asia,CI/CD
+2024-Q3,850,187,22.0,Monster Asia,CI/CD
+2025-Q3,206,29,14.08,Monster Asia,CI/CD
+2025-Q4,158,14,8.86,Monster Asia,CI/CD
+2026-Q1,221,24,10.86,Monster Asia,CI/CD
+2026-Q2,745,189,25.37,Monster Asia,CI/CD
+2026-Q3,997,272,27.28,Monster Asia,CI/CD
+2020,201,24,11.94,Monster Asia,AWS
+2021,392,83,21.17,Monster Asia,AWS
+2022,508,91,17.91,Monster Asia,AWS
+2023-Q3,188,51,27.13,Monster Asia,AWS
+2023-Q4,543,141,25.97,Monster Asia,AWS
+2024-Q1,325,33,10.15,Monster Asia,AWS
+2024-Q2,132,26,19.7,Monster Asia,AWS
+2024-Q3,850,240,28.24,Monster Asia,AWS
+2025-Q3,206,37,17.96,Monster Asia,AWS
+2025-Q4,158,20,12.66,Monster Asia,AWS
+2026-Q1,221,39,17.65,Monster Asia,AWS
+2026-Q2,745,182,24.43,Monster Asia,AWS
+2026-Q3,997,228,22.87,Monster Asia,AWS
+2020,201,11,5.47,Monster Asia,Kubernetes
+2021,392,26,6.63,Monster Asia,Kubernetes
+2022,508,32,6.3,Monster Asia,Kubernetes
+2023-Q3,188,21,11.17,Monster Asia,Kubernetes
+2023-Q4,543,84,15.47,Monster Asia,Kubernetes
+2024-Q1,325,27,8.31,Monster Asia,Kubernetes
+2024-Q2,132,18,13.64,Monster Asia,Kubernetes
+2024-Q3,850,111,13.06,Monster Asia,Kubernetes
+2025-Q3,206,12,5.83,Monster Asia,Kubernetes
+2025-Q4,158,4,2.53,Monster Asia,Kubernetes
+2026-Q1,221,13,5.88,Monster Asia,Kubernetes
+2026-Q2,745,124,16.64,Monster Asia,Kubernetes
+2026-Q3,997,167,16.75,Monster Asia,Kubernetes
+2020,201,12,5.97,Monster Asia,Machine Learning
+2021,392,22,5.61,Monster Asia,Machine Learning
+2022,508,13,2.56,Monster Asia,Machine Learning
+2023-Q3,188,9,4.79,Monster Asia,Machine Learning
+2023-Q4,543,29,5.34,Monster Asia,Machine Learning
+2024-Q1,325,27,8.31,Monster Asia,Machine Learning
+2024-Q2,132,8,6.06,Monster Asia,Machine Learning
+2024-Q3,850,41,4.82,Monster Asia,Machine Learning
+2025-Q3,206,12,5.83,Monster Asia,Machine Learning
+2025-Q4,158,22,13.92,Monster Asia,Machine Learning
+2026-Q1,221,31,14.03,Monster Asia,Machine Learning
+2026-Q2,745,75,10.07,Monster Asia,Machine Learning
+2026-Q3,997,103,10.33,Monster Asia,Machine Learning

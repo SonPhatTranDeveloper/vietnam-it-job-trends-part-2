@@ -1,6 +1,6 @@
 # Vietnam IT job trends, 2020–2026 (Techmap)
 
-Analysis behind the video *Vietnam IT Job Trends 2024–2026*, standalone, built on the
+Analysis behind the video *149.360 việc làm IT Việt Nam trong 6 năm (2021-2026)*, standalone, built on the
 **Techmap** Vietnam job-postings feed (a paid, licensed dataset: **do not republish
 raw or sample postings**; aggregate tables only, with Techmap credited).
 
@@ -22,13 +22,15 @@ src/vnjobs/                      the installed package (uv sync installs it, so 
   analysis/core.py               data access, period axis, chart helpers shared by the notebooks
   analysis/<theme>.py            queries and charts for one notebook each (volume, technologies, roles,
                                  seniority, companies, ai, work_mode, salary, data_ai, languages,
-                                 entry_level, industries, persistence, benefits, reconciliation)
+                                 entry_level, industries, persistence, benefits, reconciliation,
+                                 crossovers, employers_by_year, skill_inflation)
 
 notebooks/                       one per theme, reading the features; they write only aggregates:
   01-market-volume  02-technology-trends  03-roles  04-seniority
   05-companies  06-ai-and-llm  07-work-mode  08-salary  09-data-and-ai-jobs
   10-language-requirements  11-entry-level-reality  12-industries
   13-persistent-vacancies  14-benefits  15-part-1-reconciliation
+  16-technology-crossovers  17-top-employers-by-year  18-skill-inflation
 tables/  charts/                 the aggregate CSVs and PNGs the notebooks save (safe to share, credit Techmap)
 ```
 
