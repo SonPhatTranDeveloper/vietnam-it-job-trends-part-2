@@ -1,0 +1,10 @@
+dataset,mode,pct_of_all_postings,pct_of_stated,pct_stating_a_mode
+part 1,remote,3.1,4.0,78.0
+part 1,hybrid,7.7,9.8,78.0
+part 1,onsite,67.2,86.2,78.0
+"Techmap 2026, all sources",remote,4.0,15.8,25.3
+"Techmap 2026, all sources",hybrid,6.8,26.7,25.3
+"Techmap 2026, all sources",onsite,14.6,57.4,25.3
+"Techmap 2026, LinkedIn",remote,5.2,29.1,17.8
+"Techmap 2026, LinkedIn",hybrid,7.8,44.1,17.8
+"Techmap 2026, LinkedIn",onsite,4.8,26.8,17.8

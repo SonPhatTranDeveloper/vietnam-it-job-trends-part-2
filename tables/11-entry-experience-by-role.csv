@@ -1,0 +1,12 @@
+role,postings,pct_2_years_plus,pct_3_years_plus,median_years
+backend,499,74.7,45.1,2.0
+devops_cloud,324,74.7,43.5,2.0
+fullstack,264,72.7,40.2,2.0
+ai_ml,487,74.9,36.1,2.0
+data,411,69.3,29.7,2.0
+qa_test,607,67.5,29.7,2.0
+embedded_iot,164,48.8,25.0,1.0
+security,130,56.9,24.6,2.0
+software_other,337,54.9,24.0,2.0
+technical_non_software,173,65.9,20.8,2.0
+it_support_infra,358,55.6,19.0,2.0
