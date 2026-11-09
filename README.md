@@ -7,6 +7,8 @@ raw or sample postings**; aggregate tables only, with Techmap credited).
 
 > **The cleaned IT dataset (~149,360 postings) is not in this repo yet.** Redistributing it needs
 > Techmap's permission; it will be added here once that is confirmed. Everything under `tables/` is aggregate.
+> For a small, ready-to-use data pack (yearly counts by role, level, city, work mode and
+> technology), see [`aggregates/`](aggregates/).
 
 ```
 data/job-dataset                 symlink -> ~/Downloads/job-dataset   (2,486 daily JSONL files, 26 GB)
